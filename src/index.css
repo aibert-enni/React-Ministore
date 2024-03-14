@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --swiper-pagination-bullet-inactive-color: #737272;
+    --swiper-pagination-color: #4A4A4A;
+}
+
+body{
+    font-size: 14px;
+    color: #272727;
+}
+
+.swiper-pagination-bullets {
+    position: relative;
+    margin-top: 50px;
+}
+
+.swiper-button-disabled {
+    color: #D7DDDF;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    top: 0;
+    margin-top: auto;
+    color: #72AEC8;
+}
