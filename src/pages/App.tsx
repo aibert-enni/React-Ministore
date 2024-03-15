@@ -1,17 +1,31 @@
 import { Route, Routes } from "react-router-dom"
 import Header from "../components/Header"
-import { ROUTES } from "../router/types"
+import { IRoute, ROUTES_PATHS } from "../router/types"
 import Home from "./Home"
 import Footer from "../components/Footer"
+import Shop from "./Shop"
+
+export const routes: IRoute[] = [
+  {
+    path: ROUTES_PATHS.HOME,
+    element: <Home />
+  },
+  {
+    path: ROUTES_PATHS.SHOP,
+    element: <Shop />
+  }
+];
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path={ROUTES.HOME} element={<Home />} />
+        {routes.map(route =>
+          <Route path={route.path} element={route.element} />
+        )}
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   )
 }
