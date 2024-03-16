@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import cartIcon from '../assets/cart_icon.svg'
-import { useAppDispatch, useAppSelector } from '../hooks/redux'
-import { deleteProduct } from '../store/slices/CartSlice'
+import cartIcon from '../../assets/cart_icon.svg'
+import { useAppDispatch, useAppSelector } from '../../hooks/redux'
+import { deleteProduct } from '../../store/slices/CartSlice'
 
 const Cart = () => {
   const [isShow, setIsShow] = useState<boolean>(false)
 
   const cart = useAppSelector(state => state.cart)
   const dispatch = useAppDispatch()
-
-  console.log(cart)
 
   return (
     <div className='flex-col'>

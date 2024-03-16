@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { navItems } from '../Header'
+import { navItems } from '../header/Header'
 
 import logo from "../../assets/logo.svg"
 

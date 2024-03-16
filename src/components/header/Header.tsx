@@ -1,9 +1,9 @@
 import { Link, useLocation } from 'react-router-dom'
 
-import { ROUTES_PATHS } from '../router/types'
-import logo from '../assets/logo.svg'
-import searchIcon from '../assets/search_icon.svg'
-import personIcon from '../assets/person_icon.svg'
+import { ROUTES_PATHS } from '../../router/types'
+import logo from '../../assets/logo.svg'
+import searchIcon from '../../assets/search_icon.svg'
+import personIcon from '../../assets/person_icon.svg'
 import Cart from './Cart'
 import Breadcrumbs from './Breadcrumbs'
 

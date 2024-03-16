@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { productApi } from '../services/ProductService';
@@ -14,11 +14,11 @@ const TestimonialsSlider: FC<TestimonialsSliderProps> = ({ limit = 5 }) => {
     const { data: testimonials } = productApi.useFetchTestimonialsQuery(limit)
     const starRate = (rate: number) => {
         const content = []
-        for(let i = 1; i <= 5; i++) {
-            if(i <= rate) {
-                content.push(<img className='max-w-4' src={checkedStar}/>)
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rate) {
+                content.push(<img className='max-w-4' src={checkedStar} />)
             } else {
-                content.push(<img className='max-w-4' src={unchekedStar}/>)
+                content.push(<img className='max-w-4' src={unchekedStar} />)
             }
         }
         return content

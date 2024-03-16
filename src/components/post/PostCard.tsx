@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { IPostCard } from "../models/apiModels"
+import { IPostCard } from "../../models/apiModels"
 import { Link } from "react-router-dom"
 
 

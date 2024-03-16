@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import Product_card from './ProductCard'
-import { IProduct } from '../models/apiModels'
+import { IProduct } from '../../models/apiModels'
 
 
 interface ProductsSliderProps {

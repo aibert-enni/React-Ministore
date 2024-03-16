@@ -7,10 +7,10 @@ import saleBlockImg from "../assets/saleBlockImage.png";
 //
 import { Link } from "react-router-dom";
 import { productApi } from "../services/ProductService";
-import Products_slider from "../components/ProductsSlider";
-import { PostCard_slider } from "../components/PostCardSlider";
+import Products_slider from "../components/product/ProductsSlider";
+import { PostCard_slider } from "../components/post/PostCardSlider";
 import Testimonials_slider from "../components/TestimonialsSlider";
-import HomeSlider from "../components/HomeSlider";
+import HomeSlider from "../components/home/HomeSlider";
 
 const features = [
   {

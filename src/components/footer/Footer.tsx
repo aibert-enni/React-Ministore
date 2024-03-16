@@ -1,9 +1,9 @@
-import { productApi } from "../services/ProductService"
+import { productApi } from "../../services/ProductService"
 
 import SubscribeEmail from "./SubscribeEmail"
-import InstagramPostCards from "./footer/InstagramPostCards"
-import FooterLinks from "./footer/FooterLinks"
-import Copyright from "./footer/Copyright"
+import InstagramPostCards from "./InstagramPostCards"
+import FooterLinks from "./FooterLinks"
+import Copyright from "./Copyright"
 
 const Footer = () => {
     const { data: instaPosts } = productApi.useFetchIntsaPostsQuery('')

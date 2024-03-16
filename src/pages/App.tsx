@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom"
-import Header from "../components/Header"
+import Header from "../components/header/Header"
 import { IRoute, ROUTES_PATHS } from "../router/types"
 import Home from "./Home"
-import Footer from "../components/Footer"
+import Footer from "../components/footer/Footer"
 import Shop from "./Shop"
 
 export const routes: IRoute[] = [
