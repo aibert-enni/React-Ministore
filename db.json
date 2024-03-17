@@ -1,213 +1,213 @@
 {
-    "products": [
-        {
-            "name": "IPHONE 10",
-            "price": "1100",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "10",
-            "category": "phone",
-            "brand": ["Apple"],
-            "description": "It's Iphone 10",
-            "img_url": "https://images.unsplash.com/photo-1555375771-14b2a63968a9?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "name": "IPHONE 15",
-            "price": "2000",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "20",
-            "category": "phone",
-            "brand": ["Apple"],
-            "description": "It's Iphone 15",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone15hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290559"
-        },
-        {
-            "name": "IPHONE 13",
-            "price": "1500",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "7",
-            "category": "phone",
-            "brand": ["Apple"],
-            "description": "It's Iphone 14",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone13hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1692912410963"
-        },
-        {
-            "name": "IPHONE 14",
-            "price": "1700",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "14",
-            "category": "phone",
-            "brand": ["Apple"],
-            "description": "It's Iphone 14",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290654"
-        },
-        {
-            "name": "IPHONE 14",
-            "price": "1700",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "14",
-            "category": "phone",
-            "brand": ["Apple"],
-            "description": "It's Iphone 14",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290654"
-        },
-        {
-            "name": "IPHONE 15",
-            "price": "2000",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "20",
-            "category": "phone",
-            "brand": ["Apple"],
-            "description": "It's Iphone 15",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone15hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290559"
-        },
-        {
-            "name": "pink watch",
-            "price": "900",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "10",
-            "category": "watch",
-            "brand": ["Apple"],
-            "description": "It's Iphone 10",
-            "img_url": "https://images.unsplash.com/photo-1568752172055-6961c4146efd?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "name": "apple watch series 9",
-            "price": "900",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "10",
-            "category": "watch",
-            "brand": ["Apple"],
-            "description": "It's Iphone 10",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-s9-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1707857916163"
-        },
-        {
-            "name": "apple watch ultra 9",
-            "price": "900",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "10",
-            "category": "watch",
-            "brand": ["Apple"],
-            "description": "It's Iphone 10",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
-        },
-        {
-            "name": "apple watch se",
-            "price": "900",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "10",
-            "category": "watch",
-            "brand": ["Apple"],
-            "description": "It's Iphone 10",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-se-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1707857916288"
-        },
-        {
-            "name": "apple watch ultra 9",
-            "price": "900",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "10",
-            "category": "watch",
-            "brand": ["Apple"],
-            "description": "It's Iphone 10",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
-        },
-        {
-            "name": "apple watch ultra 9",
-            "price": "900",
-            "color": ["Black", "White", "Blue"],
-            "size": ["xl", "l", "m", "s"],
-            "available": "10",
-            "category": "watch",
-            "brand": ["Apple"],
-            "description": "It's Iphone 10",
-            "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
-        }
-    ],
-    "testimonials": [
-        {
-            "username": "Emme someone",
-            "text": "broke down in the morning",
-            "date": "14.05.2024",
-            "rate": "5",
-            "productId": "0"
-        },
-        {
-            "username": "Саня Чугун",
-            "text": "стринги ахуенные",
-            "date": "12.05.2024",
-            "rate": "5",
-            "productId": "0"
-        },
-        {
-            "username": "Морж Сергей",
-            "text": "горит",
-            "date": "12.05.2024",
-            "rate": "2",
-            "productId": "0"
-        }
-    ],
-    "productCategories": [{"name": "phone"}, {"name": "watch"}],
-    "brands": [{"name": "Apple"}, {"name": "Samsung"}],
-    "postsCard": [
-        {
-            "title": "Get some cool gadgets in 2023",
-            "date": "17.05.2024",
-            "category": "gadgets",
-            "img_url": "https://awesomestufftobuy.com/wp-content/uploads/2024/01/rabbit-r1-ai-virtual-assistant-450x450.jpg",
-            "postId": "0"
-        },
-        {
-            "title": "Get some cool bitches in 2023",
-            "date": "12.01.2024",
-            "category": "sigma",
-            "img_url": "https://escales.ponant.com/wp-content/uploads/2020/12/plage.jpg",
-            "postId": "1"
-        },
-        {
-            "title": "top 10 small camera in the world",
-            "date": "14.05.2024",
-            "category": "camera",
-            "img_url": "https://www.cnet.com/a/img/resize/584c71646722a7446d9f72f018a25fdb712b0e8d/hub/2019/08/28/f056b5ac-99ae-4c0c-85e5-aeeb0f1aea24/insta360-go-01.jpg?auto=webp&fit=crop&height=675&width=1200",
-            "postId": "3"
-        },
-        {
-            "title": "Hacker technology",
-            "date": "14.05.2024",
-            "category": "technology",
-            "img_url": "https://cdn.vox-cdn.com/thumbor/39k4GHWVKsRZGo6xzXGqqPP0NMk=/0x0:2040x1360/1400x1400/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24108883/226349_Lede.jpg",
-            "postId": "4"
-        }
-    ],
-    "instaPosts": [
-        {
-            "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-            "img_url": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        },
-        {
-            "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-            "img_url": "https://plus.unsplash.com/premium_photo-1681157762374-3f8b924d7bbc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        },
-        {
-            "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-            "img_url": "https://media.gettyimages.com/id/84810247/photo/phoenix-shaquille-oneal-of-the-western-conference-performs-with-the-jabba-wockeez-prior-to-the.jpg?s=612x612&w=0&k=20&c=AG7ULee-vMwPZ0V_TYzyi7Z0Z4YQLvxo4wAA-d39eVo="
-        },
-        {
-            "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-            "img_url": "https://avatars.mds.yandex.net/get-kinopoisk-image/10809116/ae8e60dc-bae8-4f78-8c82-c6ff5402f097/600x900"
-        },
-        {
-            "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-            "img_url": "https://plus.unsplash.com/premium_photo-1710167120674-1d8ae1271736?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
-    ]
+  "products": [
+    {
+      "name": "IPHONE 10",
+      "price": "1100",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "10",
+      "category": "phone",
+      "brand": "apple",
+      "description": "It's Iphone 10",
+      "img_url": "https://images.unsplash.com/photo-1555375771-14b2a63968a9?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "name": "IPHONE 15",
+      "price": "2000",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "20",
+      "category": "phone",
+      "brand": "apple",
+      "description": "It's Iphone 15",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone15hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290559"
+    },
+    {
+      "name": "IPHONE 13",
+      "price": "1500",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "7",
+      "category": "phone",
+      "brand": "apple",
+      "description": "It's Iphone 14",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone13hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1692912410963"
+    },
+    {
+      "name": "IPHONE 14",
+      "price": "1700",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "14",
+      "category": "phone",
+      "brand": "apple",
+      "description": "It's Iphone 14",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290654"
+    },
+    {
+      "name": "IPHONE 14",
+      "price": "1700",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "14",
+      "category": "phone",
+      "brand": "apple",
+      "description": "It's Iphone 14",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290654"
+    },
+    {
+      "name": "IPHONE 15",
+      "price": "2000",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "20",
+      "category": "phone",
+      "brand": "apple",
+      "description": "It's Iphone 15",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone15hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290559"
+    },
+    {
+      "name": "pink watch",
+      "price": "900",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "10",
+      "category": "watch",
+      "brand": "apple",
+      "description": "It's Iphone 10",
+      "img_url": "https://images.unsplash.com/photo-1568752172055-6961c4146efd?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "name": "apple watch series 9",
+      "price": "900",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "10",
+      "category": "watch",
+      "brand": "apple",
+      "description": "It's Iphone 10",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-s9-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1707857916163"
+    },
+    {
+      "name": "apple watch ultra 9",
+      "price": "900",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "10",
+      "category": "watch",
+      "brand": "apple",
+      "description": "It's Iphone 10",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
+    },
+    {
+      "name": "apple watch se",
+      "price": "900",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "10",
+      "category": "watch",
+      "brand": "apple",
+      "description": "It's Iphone 10",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-se-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1707857916288"
+    },
+    {
+      "name": "apple watch ultra 9",
+      "price": "900",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "10",
+      "category": "watch",
+      "brand": "apple",
+      "description": "It's Iphone 10",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
+    },
+    {
+      "name": "apple watch ultra 9",
+      "price": "900",
+      "color": ["Black", "White", "Blue"],
+      "size": ["xl", "l", "m", "s"],
+      "available": "10",
+      "category": "watch",
+      "brand": "apple",
+      "description": "It's Iphone 10",
+      "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
+    }
+  ],
+  "testimonials": [
+    {
+      "username": "Emme someone",
+      "text": "broke down in the morning",
+      "date": "14.05.2024",
+      "rate": "5",
+      "productId": "0"
+    },
+    {
+      "username": "Саня Чугун",
+      "text": "стринги ахуенные",
+      "date": "12.05.2024",
+      "rate": "5",
+      "productId": "0"
+    },
+    {
+      "username": "Морж Сергей",
+      "text": "горит",
+      "date": "12.05.2024",
+      "rate": "2",
+      "productId": "0"
+    }
+  ],
+  "productCategories": [{ "name": "phone" }, { "name": "watch" }],
+  "productBrands": [{ "name": "apple" }, { "name": "samsung" }],
+  "postsCard": [
+    {
+      "title": "Get some cool gadgets in 2023",
+      "date": "17.05.2024",
+      "category": "gadgets",
+      "img_url": "https://awesomestufftobuy.com/wp-content/uploads/2024/01/rabbit-r1-ai-virtual-assistant-450x450.jpg",
+      "postId": "0"
+    },
+    {
+      "title": "Get some cool bitches in 2023",
+      "date": "12.01.2024",
+      "category": "sigma",
+      "img_url": "https://escales.ponant.com/wp-content/uploads/2020/12/plage.jpg",
+      "postId": "1"
+    },
+    {
+      "title": "top 10 small camera in the world",
+      "date": "14.05.2024",
+      "category": "camera",
+      "img_url": "https://www.cnet.com/a/img/resize/584c71646722a7446d9f72f018a25fdb712b0e8d/hub/2019/08/28/f056b5ac-99ae-4c0c-85e5-aeeb0f1aea24/insta360-go-01.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "postId": "3"
+    },
+    {
+      "title": "Hacker technology",
+      "date": "14.05.2024",
+      "category": "technology",
+      "img_url": "https://cdn.vox-cdn.com/thumbor/39k4GHWVKsRZGo6xzXGqqPP0NMk=/0x0:2040x1360/1400x1400/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24108883/226349_Lede.jpg",
+      "postId": "4"
+    }
+  ],
+  "instaPosts": [
+    {
+      "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "img_url": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "img_url": "https://plus.unsplash.com/premium_photo-1681157762374-3f8b924d7bbc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "img_url": "https://media.gettyimages.com/id/84810247/photo/phoenix-shaquille-oneal-of-the-western-conference-performs-with-the-jabba-wockeez-prior-to-the.jpg?s=612x612&w=0&k=20&c=AG7ULee-vMwPZ0V_TYzyi7Z0Z4YQLvxo4wAA-d39eVo="
+    },
+    {
+      "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "img_url": "https://avatars.mds.yandex.net/get-kinopoisk-image/10809116/ae8e60dc-bae8-4f78-8c82-c6ff5402f097/600x900"
+    },
+    {
+      "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "img_url": "https://plus.unsplash.com/premium_photo-1710167120674-1d8ae1271736?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
 }

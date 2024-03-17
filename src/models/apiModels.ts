@@ -1,11 +1,3 @@
-export interface IPostCard {
-  title: string;
-  date: string;
-  category: string;
-  img_url: string;
-  postId: string;
-}
-
 export interface IProduct {
   id: string;
   name: string;
@@ -27,6 +19,26 @@ export interface IPaginate {
   next?: number;
   pages?: number;
   prev?: number;
+}
+
+export interface IFilter {
+  name: string
+}
+
+// export interface IProductCategory {
+//   name: string;
+// }
+
+// export interface IProductBrand {
+//   name: string;
+// }
+
+export interface IPostCard {
+  title: string;
+  date: string;
+  category: string;
+  img_url: string;
+  postId: string;
 }
 
 export interface ITestimonial {

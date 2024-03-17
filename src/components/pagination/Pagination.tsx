@@ -1,8 +1,8 @@
-import React, { FC, useState } from 'react'
-import { IPaginate, IPostCard, IProduct } from '../models/apiModels'
-import { sortItem } from '../models/types'
+import React, { FC, useEffect, useRef, useState } from 'react'
+import { IPaginate, IPostCard, IProduct } from '../../models/apiModels'
+import { sortItem } from '../../models/types'
 
-import sortArrow from '../assets/sortArrow.svg'
+import sortArrow from '../../assets/sortArrow.svg'
 
 export type cardType = IProduct | IPostCard
 
@@ -17,6 +17,12 @@ interface PaginationProps {
 
 const Pagination: FC<PaginationProps> = ({ data, cardElement, sortItem, sortItems, page, pageHandle }) => {
     const [show, setShow] = useState<boolean>(false)
+
+    const cardsRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        cardsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, [page])
 
     const pageList = () => {
         const list: JSX.Element[] = []
@@ -76,7 +82,7 @@ const Pagination: FC<PaginationProps> = ({ data, cardElement, sortItem, sortItem
     }
 
     return (
-        <div className='py-28'>
+        <div className=''>
             <div className='flex justify-between items-center font-light mb-5'>
                 <p>Showing {1 + ((page - 1) * 9)}-{data?.next != null ? page * 9 : data?.items} of {data?.items} results</p>
                 <div className='flex flex-col flex-shrink-0 relative'>
@@ -92,14 +98,14 @@ const Pagination: FC<PaginationProps> = ({ data, cardElement, sortItem, sortItem
                 </div>
             </div>
             <div>
-                <div className='grid grid-cols-3 gap-x-5 gap-y-8 mb-16'>
+                <div ref={cardsRef} className='grid grid-cols-3 gap-x-5 gap-y-8 mb-16'>
                     {data?.data?.map(props =>
                         cardElement(props)
                     )}
                 </div>
                 <div className='flex justify-center items-center gap-6'>
                     {prevArrow()}
-                    <ul className='flex gap-6'>
+                    <ul className='flex gap-6 text-[#D7DDDF]'>
                         {pageList().map(element => element)}
                     </ul>
                     {nextArrow()}
