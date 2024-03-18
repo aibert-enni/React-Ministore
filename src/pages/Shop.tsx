@@ -19,8 +19,10 @@ const Shop = () => {
   const [sortItem, setSortItem] = useState<string>('Default sorting')
   const [sortBy, setSortBy] = useState<string>('')
   const [filter, setFilter] = useState<string>('all')
+  const [search, setSearch] = useState<string>('')
 
-  const { data: paginate } = productApi.useFetchByPaginateQuery({ category: category, brand: brand, page: page, per_page: 9, sort: sortBy })
+  const { data: paginate } = productApi.useFetchByPaginateQuery({ category: category, brand: brand, page: page, per_page: 9, sort: sortBy, search: search })
+  console.log(paginate)
   const { data: categories } = productApi.useFetchProductCategorisQuery('')
   const { data: brands } = productApi.useFetchProductBrandsQuery('')
 
@@ -61,14 +63,21 @@ const Shop = () => {
       if (e.currentTarget.textContent === 'all') {
         setCategory('')
         setBrand('')
+        setPage(1)
       } else {
         setCategory(e.currentTarget.textContent)
+        setPage(1)
       }
     }
   }
 
   const brandsHandle = (e: React.MouseEvent<HTMLLIElement>) => {
     if (e.currentTarget.textContent) setBrand(e.currentTarget.textContent)
+  }
+
+  const searchHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(e.currentTarget.value)
+    if (e.currentTarget.value || e.currentTarget.value === '') setSearch(e.currentTarget.value)
   }
 
   const filterBlocks: JSX.Element[] = [
@@ -81,7 +90,7 @@ const Shop = () => {
     <main className="container mx-auto max-w-screen-lg py-28">
       <div className="flex gap-10">
         <Pagination data={paginate} cardElement={productCard} sortItems={sortItems} sortItem={sortItem} page={page} pageHandle={pageHandle} />
-        <FilterPagination blocks={filterBlocks} />
+        <FilterPagination blocks={filterBlocks} searchHandle={searchHandle} />
       </div>
 
     </main>

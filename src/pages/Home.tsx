@@ -11,6 +11,7 @@ import Products_slider from "../components/product/ProductsSlider";
 import { PostCard_slider } from "../components/post/PostCardSlider";
 import Testimonials_slider from "../components/TestimonialsSlider";
 import HomeSlider from "../components/home/HomeSlider";
+import { skipToken } from "@reduxjs/toolkit/query";
 
 const features = [
   {
@@ -36,7 +37,7 @@ const features = [
 ];
 
 const Home = () => {
-  const { data: phones } = productApi.useFetchByCategoryQuery("phone");
+  const { data: phones } = productApi.useFetchByCategoryQuery('phone');
   const { data: watches } = productApi.useFetchByCategoryQuery("watch");
   const { data: postsCards } = productApi.useFetchPostCardsQuery("");
 

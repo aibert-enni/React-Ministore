@@ -16,13 +16,12 @@ export interface IPaginate {
   first?: number;
   items?: number;
   last?: number;
-  next?: number;
-  pages?: number;
-  prev?: number;
+  next?: number | null;
+  prev?: number | null;
 }
 
 export interface IFilter {
-  name: string
+  name: string;
 }
 
 // export interface IProductCategory {
