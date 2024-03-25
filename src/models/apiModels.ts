@@ -9,6 +9,7 @@ export interface IProduct {
   brand: string[];
   description: string;
   img_url: string;
+  reviews_ids: string[]
 }
 
 export interface IPaginate {
@@ -40,7 +41,7 @@ export interface IPostCard {
   postId: string;
 }
 
-export interface ITestimonial {
+export interface IReviews {
   username: string;
   text: string;
   date: string;

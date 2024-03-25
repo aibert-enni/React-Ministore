@@ -1,4 +1,4 @@
-import { EventHandler, useState } from "react"
+import { useState } from "react"
 import Pagination, { cardType } from "../components/pagination/Pagination"
 import ProductCard from "../components/product/ProductCard"
 import { IProduct } from "../models/apiModels"
@@ -23,7 +23,7 @@ const Shop = () => {
 
   const { data: paginate } = productApi.useFetchByPaginateQuery({ category: category, brand: brand, page: page, per_page: 9, sort: sortBy, search: search })
   console.log(paginate)
-  const { data: categories } = productApi.useFetchProductCategorisQuery('')
+  const { data: categories } = productApi.useFetchProductCategoriesQuery('')
   const { data: brands } = productApi.useFetchProductBrandsQuery('')
 
   const sortItems: sortItem[] = [
@@ -87,7 +87,7 @@ const Shop = () => {
 
 
   return (
-    <main className="container mx-auto max-w-screen-lg py-28">
+    <main className="container-lg py-28">
       <div className="flex gap-10">
         <Pagination data={paginate} cardElement={productCard} sortItems={sortItems} sortItem={sortItem} page={page} pageHandle={pageHandle} />
         <FilterPagination blocks={filterBlocks} searchHandle={searchHandle} />

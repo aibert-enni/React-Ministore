@@ -11,7 +11,6 @@ import Products_slider from "../components/product/ProductsSlider";
 import { PostCard_slider } from "../components/post/PostCardSlider";
 import Testimonials_slider from "../components/TestimonialsSlider";
 import HomeSlider from "../components/home/HomeSlider";
-import { skipToken } from "@reduxjs/toolkit/query";
 
 const features = [
   {
@@ -44,7 +43,7 @@ const Home = () => {
   return (
     <main className="main-page">
       <HomeSlider />
-      <div className="features container mx-auto max-w-screen-lg">
+      <div className="features container-lg">
         <div className="flex gap-14 my-32">
           {features.map((feature) => (
             <div className="flex gap-3 items-start">
@@ -60,7 +59,7 @@ const Home = () => {
         <Products_slider products={watches} category="watches" />
       </div>
       <div className="bg-grey-10 my-28">
-        <div className="container mx-auto max-w-screen-lg flex justify-between items-center">
+        <div className="container-lg flex justify-between items-center">
           <div className="">
             <p className="uppercase font-light text-3xl">- 10% off</p>
             <p className="font-light text-6xl uppercase mb-14">New Year Sale</p>
@@ -78,7 +77,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="container mx-auto max-w-screen-lg">
+      <div className="container-lg">
         <PostCard_slider postCards={postsCards} category="Latest" />
         <Testimonials_slider limit={5} />
       </div>

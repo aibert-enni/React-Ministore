@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .container-lg {
+        @apply container mx-auto max-w-screen-lg
+    }
+    .button {
+        @apply px-10 h-[53px] bg-[#272727] font-medium uppercase text-white
+    }
+}
+
 :root {
     --swiper-pagination-bullet-inactive-color: #737272;
     --swiper-pagination-color: #4A4A4A;

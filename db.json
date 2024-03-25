@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": "0",
       "name": "IPHONE 10",
       "price": "1100",
       "color": ["Black", "White", "Blue"],
@@ -9,9 +10,11 @@
       "category": "phone",
       "brand": "apple",
       "description": "It's Iphone 10",
-      "img_url": "https://images.unsplash.com/photo-1555375771-14b2a63968a9?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "img_url": "https://images.unsplash.com/photo-1555375771-14b2a63968a9?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "reviews_ids": ["0", "1", "2"]
     },
     {
+      "id": "1",
       "name": "IPHONE 15",
       "price": "2000",
       "color": ["Black", "White", "Blue"],
@@ -23,6 +26,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone15hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290559"
     },
     {
+      "id": "2",
       "name": "IPHONE 13",
       "price": "1500",
       "color": ["Black", "White", "Blue"],
@@ -34,6 +38,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone13hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1692912410963"
     },
     {
+      "id": "3",
       "name": "IPHONE 14",
       "price": "1700",
       "color": ["Black", "White", "Blue"],
@@ -45,6 +50,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290654"
     },
     {
+      "id": "4",
       "name": "IPHONE 14",
       "price": "1700",
       "color": ["Black", "White", "Blue"],
@@ -56,6 +62,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290654"
     },
     {
+      "id": "5",
       "name": "IPHONE 15",
       "price": "2000",
       "color": ["Black", "White", "Blue"],
@@ -67,6 +74,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone15hero-202309?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1693086290559"
     },
     {
+      "id": "6",
       "name": "pink watch",
       "price": "900",
       "color": ["Black", "White", "Blue"],
@@ -78,6 +86,7 @@
       "img_url": "https://images.unsplash.com/photo-1568752172055-6961c4146efd?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
+      "id": "7",
       "name": "apple watch series 9",
       "price": "900",
       "color": ["Black", "White", "Blue"],
@@ -89,6 +98,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-s9-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1707857916163"
     },
     {
+      "id": "8",
       "name": "apple watch ultra 9",
       "price": "900",
       "color": ["Black", "White", "Blue"],
@@ -100,6 +110,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
     },
     {
+      "id": "9",
       "name": "apple watch se",
       "price": "900",
       "color": ["Black", "White", "Blue"],
@@ -111,6 +122,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-se-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1707857916288"
     },
     {
+      "id": "10",
       "name": "apple watch ultra 9",
       "price": "900",
       "color": ["Black", "White", "Blue"],
@@ -122,6 +134,7 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
     },
     {
+      "id": "11",
       "name": "apple watch ultra 9",
       "price": "900",
       "color": ["Black", "White", "Blue"],
@@ -133,27 +146,27 @@
       "img_url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202403?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1708673883590"
     }
   ],
-  "testimonials": [
+  "reviews": [
     {
+      "id": "0",
       "username": "Emme someone",
       "text": "broke down in the morning",
       "date": "14.05.2024",
-      "rate": "5",
-      "productId": "0"
+      "rate": "5"
     },
     {
+      "id": "1",
       "username": "Саня Чугун",
       "text": "стринги ахуенные",
       "date": "12.05.2024",
-      "rate": "5",
-      "productId": "0"
+      "rate": "5"
     },
     {
+      "id": "2",
       "username": "Морж Сергей",
       "text": "горит",
       "date": "12.05.2024",
-      "rate": "2",
-      "productId": "0"
+      "rate": "2"
     }
   ],
   "productCategories": [{ "name": "phone" }, { "name": "watch" }],

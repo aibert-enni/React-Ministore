@@ -12,7 +12,7 @@ const HomeSlider = () => {
           <p className='font-light text-6xl uppercase mb-14'>
             Your Products are great.
           </p>
-          <Link className='uppercase font-medium bg-black-1 px-12 py-4 text-white' to='shop'>
+          <Link className='button' to='shop'>
             shop product
           </Link>
         </div>

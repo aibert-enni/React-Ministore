@@ -2,16 +2,24 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import {
   IProduct,
   IPostCard,
-  ITestimonial,
   IInstaPost,
   IPaginate,
   IFilter,
+  IReviews,
 } from "../models/apiModels";
 
 export const productApi = createApi({
   reducerPath: "productApi",
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000" }),
   endpoints: (build) => ({
+    fetchById: build.query<IProduct[], string>({
+      query: (id: string) => ({
+        url: "products",
+        params: {
+          id: id
+        }
+      })
+    }),
     fetchByCategory: build.query<IProduct[], string | null>({
       query: (category: string | null) => {
         const params: { [key: string]: string } = {};
@@ -89,7 +97,7 @@ export const productApi = createApi({
         };
       },
     }),
-    fetchProductCategoris: build.query<IFilter[], "">({
+    fetchProductCategories: build.query<IFilter[], "">({
       query: () => ({
         url: "/productCategories",
       }),
@@ -104,13 +112,22 @@ export const productApi = createApi({
         url: "/postsCard",
       }),
     }),
-    fetchTestimonials: build.query<ITestimonial[], number>({
+    fetchReviews: build.query<IReviews[], number>({
       query: (limit: number) => ({
-        url: "/testimonials",
+        url: "/reviews",
         params: {
           _limit: limit,
         },
       }),
+    }),
+    fetchReviewsByIds: build.query<IReviews[], string[]>({
+      query: (ids: string[]) => {
+        let url = "/reviews?"
+        ids.map(id => url += `id=${id}&`)
+        return {
+          url: url
+        }
+      },
     }),
     fetchIntsaPosts: build.query<IInstaPost[], string>({
       query: () => ({
