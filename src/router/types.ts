@@ -4,6 +4,7 @@ export enum ROUTES_PATHS {
   HOME = "/",
   SHOP = "/shop",
   PRODUCT = "/product/:id",
+  ABOUT = "/about"
 }
 
 export interface IRoute {

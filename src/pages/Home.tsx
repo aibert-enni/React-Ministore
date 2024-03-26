@@ -1,8 +1,5 @@
 //assets
-import featureCart from "../assets/feature_card.svg";
-import featureMedal from "../assets/feature_medal.svg";
-import featurePrice from "../assets/feature_price.svg";
-import featureShield from "../assets/feature_shield.svg";
+
 import saleBlockImg from "../assets/saleBlockImage.png";
 //
 import { Link } from "react-router-dom";
@@ -11,29 +8,9 @@ import Products_slider from "../components/product/ProductsSlider";
 import { PostCard_slider } from "../components/post/PostCardSlider";
 import Testimonials_slider from "../components/TestimonialsSlider";
 import HomeSlider from "../components/home/HomeSlider";
+import Features from "../components/Features";
 
-const features = [
-  {
-    title: "Free delivery",
-    description: "To every coutry in world",
-    icon: featureCart,
-  },
-  {
-    title: "Quality guarantee",
-    description: "If broken we will refund money",
-    icon: featureMedal,
-  },
-  {
-    title: "Daily offers",
-    description: "various discounts",
-    icon: featurePrice,
-  },
-  {
-    title: "100% secure payment",
-    description: "Your money secure",
-    icon: featureShield,
-  },
-];
+
 
 const Home = () => {
   const { data: phones } = productApi.useFetchByCategoryQuery('phone');
@@ -43,18 +20,8 @@ const Home = () => {
   return (
     <main className="main-page">
       <HomeSlider />
-      <div className="features container-lg">
-        <div className="flex gap-14 my-32">
-          {features.map((feature) => (
-            <div className="flex gap-3 items-start">
-              <img className="max-w-5" src={feature.icon} alt="" />
-              <div>
-                <p className="uppercase text-lg">{feature.title}</p>
-                <p className="font-light text-base">{feature.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="container-lg">
+        <Features />
         <Products_slider products={phones} category="mobile" />
         <Products_slider products={watches} category="watches" />
       </div>

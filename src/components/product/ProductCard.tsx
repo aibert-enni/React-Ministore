@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import { useAppDispatch } from '../../hooks/redux';
 import { addProduct } from '../../store/slices/CartSlice';
 import { IProduct } from '../../models/apiModels';
-import { Link, resolvePath } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
   product: IProduct

@@ -10,12 +10,12 @@ import Breadcrumbs from './Breadcrumbs'
 export const navItems = [
   { name: 'Home', path: ROUTES_PATHS.HOME },
   { name: 'Shop', path: ROUTES_PATHS.SHOP },
-  { name: 'About', path: 'about' },
+  { name: 'About', path: ROUTES_PATHS.ABOUT },
   { name: 'Blogs', path: 'blogs' },
   { name: 'Contact', path: 'contact' }
 ]
 
-const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP]
+const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT]
 
 const Header = () => {
   const { pathname } = useLocation()

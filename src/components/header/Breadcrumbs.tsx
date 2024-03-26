@@ -1,5 +1,4 @@
-import React, { FC } from 'react'
-import { useLocation } from 'react-router-dom'
+import { FC } from 'react'
 
 interface BreadcrumbsProps {
     currentPath: string

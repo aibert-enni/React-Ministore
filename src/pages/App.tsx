@@ -5,6 +5,7 @@ import Home from "./Home"
 import Footer from "../components/footer/Footer"
 import Shop from "./Shop"
 import Product from "./Product"
+import About from "./About"
 
 export const routes: IRoute[] = [
   {
@@ -18,6 +19,10 @@ export const routes: IRoute[] = [
   {
     path: ROUTES_PATHS.PRODUCT,
     element: <Product />
+  },
+  {
+    path: ROUTES_PATHS.ABOUT,
+    element: <About />
   }
 ];
 
