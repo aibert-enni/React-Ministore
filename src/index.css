@@ -7,7 +7,7 @@
         @apply container mx-auto max-w-screen-lg
     }
     .button {
-        @apply px-10 h-[53px] bg-[#272727] font-medium uppercase text-white
+        @apply px-10 h-[53px] bg-[#272727] font-medium uppercase text-white flex items-center w-fit
     }
 }
 

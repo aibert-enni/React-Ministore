@@ -1,4 +1,3 @@
-import React from 'react'
 import Features from '../components/Features'
 import TestimonialsSlider from '../components/TestimonialsSlider'
 import { Link } from 'react-router-dom'

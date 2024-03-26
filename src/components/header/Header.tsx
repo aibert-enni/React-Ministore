@@ -4,8 +4,9 @@ import { ROUTES_PATHS } from '../../router/types'
 import logo from '../../assets/logo.svg'
 import searchIcon from '../../assets/search_icon.svg'
 import personIcon from '../../assets/person_icon.svg'
-import Cart from './Cart'
 import Breadcrumbs from './Breadcrumbs'
+import NavItems from './NavItems'
+import CartDropdown from './CartDropdown'
 
 export const navItems = [
   { name: 'Home', path: ROUTES_PATHS.HOME },
@@ -15,7 +16,7 @@ export const navItems = [
   { name: 'Contact', path: 'contact' }
 ]
 
-const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT]
+const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT, ROUTES_PATHS.CART]
 
 const Header = () => {
   const { pathname } = useLocation()
@@ -28,15 +29,13 @@ const Header = () => {
             <img className='w-32' src={logo} alt="" />
           </div>
           <div className='flex justify-between items-center'>
-            <div className='flex gap-10 mr-28'>
-              {navItems.map(item => <Link className='uppercase font-medium hover:underline underline-offset-2' to={item.path}>{item.name}</Link>)}
-            </div>
+            <NavItems />
             <div className='flex gap-5 items-center'>
               <img className='cursor-pointer' src={searchIcon} alt="search icon" />
               <Link to='signIn'>
                 <img src={personIcon} alt="sign icon" />
               </Link>
-              <Cart />
+              <CartDropdown />
             </div>
           </div>
         </nav>

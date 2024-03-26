@@ -3,7 +3,7 @@ import cartIcon from '../../assets/cart_icon.svg'
 import { useAppDispatch, useAppSelector } from '../../hooks/redux'
 import { deleteProduct } from '../../store/slices/CartSlice'
 
-const Cart = () => {
+const CartDropdown = () => {
   const [isShow, setIsShow] = useState<boolean>(false)
 
   const cart = useAppSelector(state => state.cart)
@@ -17,7 +17,7 @@ const Cart = () => {
           ({cart.productAmount})
         </p>
       </div>
-      <div className={`bg-white absolute p-1 border-grey-75 border ${!isShow && 'hidden'}`}>
+      <div className={`bg-white absolute p-1  shadow rounded-md ${!isShow && 'hidden'}`}>
         {cart.products.map(cartProduct => {
           return (
             <>
@@ -27,7 +27,7 @@ const Cart = () => {
                   <p>{cartProduct.product.name}</p>
                   <p className='text-xs'>{cartProduct.amount} * <span className='font-bold'>{cartProduct.product.price}$</span></p>
                 </div>
-                <p onClick={() => dispatch(deleteProduct(cartProduct.product.name))}>X</p>
+                <p className='cursor-pointer' onClick={() => dispatch(deleteProduct(cartProduct.product.name))}>X</p>
               </div>
             </>
           )
@@ -40,4 +40,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default CartDropdown

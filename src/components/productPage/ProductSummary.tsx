@@ -3,6 +3,8 @@ import { IProduct } from '../../models/apiModels'
 import { Link } from 'react-router-dom'
 import { useAppDispatch } from '../../hooks/redux'
 import { addProduct } from '../../store/slices/CartSlice'
+import { ROUTES_PATHS } from '../../router/types'
+import QuantityButtons from '../../features/QuantityButtons'
 
 interface ProductSummaryProps {
     product?: IProduct
@@ -13,17 +15,7 @@ const ProductSummary: FC<ProductSummaryProps> = ({ product }) => {
 
     const dispatch = useAppDispatch()
 
-    function incrementBuyAmount() {
-        if (Number(product?.available) > buyAmount) {
-            setBuyAmount(buyAmount + 1)
-        }
-    }
 
-    function decrementBuyAmount() {
-        if (buyAmount > 1) {
-            setBuyAmount(buyAmount - 1)
-        }
-    }
 
     return (
         <div className='flex gap-5'>
@@ -46,20 +38,10 @@ const ProductSummary: FC<ProductSummaryProps> = ({ product }) => {
                 </div>
                 <div>
                     <p className='mb-3'>{product?.available} in stock</p>
-                    <div className='flex gap-2'>
-                        <button onClick={() => decrementBuyAmount()} className='bg-white w-[44px] h-[44px] border border-[#EEEEEE] shadow'>
-                            -
-                        </button>
-                        <button className='bg-white w-[90px] h-[44px] border border-[#EEEEEE] shadow'>
-                            {buyAmount}
-                        </button>
-                        <button onClick={() => incrementBuyAmount()} className='bg-white w-[44px] h-[44px] border border-[#EEEEEE] shadow'>
-                            +
-                        </button>
-                    </div>
+                    <QuantityButtons quantity={buyAmount} availableAmount={product?.available} setQuantity={setBuyAmount} />
                 </div>
                 <div className='my-4 flex gap-4'>
-                    <Link className='button bg-[#72AEC8]  flex items-center' to={'/cart'}>
+                    <Link className='button bg-[#72AEC8]  flex items-center' to={ROUTES_PATHS.CART}>
                         buy now
                     </Link>
                     <button onClick={() => dispatch(addProduct({ product, amount: buyAmount }))} className='button'>

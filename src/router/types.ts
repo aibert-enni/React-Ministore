@@ -1,10 +1,9 @@
-import { ReactElement } from "react";
-
 export enum ROUTES_PATHS {
   HOME = "/",
   SHOP = "/shop",
   PRODUCT = "/product/:id",
-  ABOUT = "/about"
+  ABOUT = "/about",
+  CART = "/cart"
 }
 
 export interface IRoute {
