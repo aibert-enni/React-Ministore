@@ -1,13 +1,13 @@
 import { FC } from "react"
 import { useAppDispatch } from "../hooks/redux"
-import { addProduct } from "../store/slices/CartSlice"
+import { ICartProduct, addProduct } from "../store/slices/CartSlice"
 import { IProduct } from "../models/apiModels"
 
 interface QualityButtonsProps {
     quantity: number,
     availableAmount?: string,
     setQuantity?: (quantity: number) => void,
-    product?: IProduct
+    product?: ICartProduct
 }
 
 const QuantityButtons: FC<QualityButtonsProps> = ({ quantity, availableAmount, setQuantity, product }) => {
@@ -18,7 +18,7 @@ const QuantityButtons: FC<QualityButtonsProps> = ({ quantity, availableAmount, s
             if (setQuantity) {
                 setQuantity(quantity + 1)
             } else {
-                dispatch(addProduct({ product, amount: 1 }))
+                product && dispatch(addProduct({ product, amount: 1 }))
             }
         }
     }
@@ -28,7 +28,7 @@ const QuantityButtons: FC<QualityButtonsProps> = ({ quantity, availableAmount, s
             if (setQuantity) {
                 setQuantity(quantity - 1)
             } else {
-                dispatch(addProduct({ product, amount: -1 }))
+                product && dispatch(addProduct({ product, amount: -1 }))
             }
         }
     }

@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom"
 import QuantityButtons from "../features/QuantityButtons"
-import { useAppDispatch, useAppSelector } from "../hooks/redux"
-import { addProduct } from "../store/slices/CartSlice"
+import { useAppSelector } from "../hooks/redux"
 import { ROUTES_PATHS } from "../router/types"
 
 const Cart = () => {
     const cartProducts = useAppSelector(state => state.cart)
+
+    console.log(cartProducts)
     return (
         <div className='container-lg my-28'>
-            <div className="grid grid-cols-3 uppercase w-full mb-20 *:border-b *:border-[#CDCDCD] text-xl *:flex *:items-center *:py-5">
+            <div className="grid grid-cols-[50%_25%_25%] uppercase w-full mb-20 *:border-b *:border-[#CDCDCD] text-xl *:flex *:items-center *:py-5">
                 <p className="pb-5">Product</p>
                 <p className="pb-5">Quantity</p>
                 <p className="pb-5">Subtotal</p>
@@ -18,7 +19,7 @@ const Cart = () => {
                             <div className="gap-3">
                                 <img className="w-[151px] h-[151px]" src={cartProduct.product.img_url} alt="" />
                                 <div>
-                                    <p>{cartProduct.product.name}</p>
+                                    <p>{cartProduct.product.name} {cartProduct.product.color} {cartProduct.product.size}</p>
                                     <p className="text-[#72AEC8]">${cartProduct.product.price}.00</p>
                                 </div>
                             </div>

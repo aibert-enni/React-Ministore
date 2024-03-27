@@ -1,14 +1,26 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { IProduct } from "../../models/IProduct";
+import { IProduct } from "../../models/apiModels";
 
 export interface ICartProduct {
-    product: IProduct,
+    id: string;
+  name: string;
+  price: number;
+  color: string;
+  size: string;
+  available: string;
+  category: string;
+  brand: string[];
+  img_url: string;
+}
+
+export interface ICart {
+    product: ICartProduct,
     amount: number
 }
 
 interface CartState {
     productAmount: number,
-    products: ICartProduct[],
+    products: ICart[],
     totalPrice: number
 }
 
@@ -22,7 +34,7 @@ export const cartSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
-        addProduct(state, action: PayloadAction<ICartProduct>){
+        addProduct(state, action: PayloadAction<ICart>){
             state.productAmount += action.payload.amount
             const isExist = state.products.findIndex(cartProduct => cartProduct.product.name === action.payload.product.name)
             if(isExist != -1) {

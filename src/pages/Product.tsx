@@ -6,6 +6,7 @@ import ProductSummary from '../components/productPage/ProductSummary'
 import ProductReviews from '../components/productPage/ProductReviews'
 import ProductsSlider from '../components/product/ProductsSlider'
 import { skipToken } from '@reduxjs/toolkit/query'
+import productConverter from '../utils/productConverter'
 
 enum SECTION_NAMES {
     DESCRIPTION,
@@ -16,6 +17,7 @@ const Product = () => {
     const { id } = useParams()
 
     const { data: productList } = productApi.useFetchByIdQuery(id ? id : '0')
+
     const product = productList ? productList[0] : undefined
 
     const [section, setSection] = useState<SECTION_NAMES>(SECTION_NAMES.DESCRIPTION)
@@ -37,7 +39,7 @@ const Product = () => {
 
     return (
         <div className='container-lg flex flex-col gap-28 my-28'>
-            <ProductSummary product={product} />
+            {product && <ProductSummary product={product} />}
             <div>
                 <div className='flex justify-center gap-14 mb-5'>
                     <p onClick={() => setSection(SECTION_NAMES.DESCRIPTION)} className={`uppercase cursor-pointer text-3xl ${section === SECTION_NAMES.DESCRIPTION ? 'text-[#72AEC8]' : ''}`}>Description</p>
