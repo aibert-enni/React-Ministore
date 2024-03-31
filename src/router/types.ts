@@ -3,7 +3,8 @@ export enum ROUTES_PATHS {
   SHOP = "/shop",
   PRODUCT = "/product/:id",
   ABOUT = "/about",
-  CART = "/cart"
+  CART = "/cart",
+  CHECKOUT = "/checkout"
 }
 
 export interface IRoute {

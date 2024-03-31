@@ -43,7 +43,7 @@ const Cart = () => {
                     <Link className="button" to={ROUTES_PATHS.SHOP}>
                         Continue shopping
                     </Link>
-                    <Link className="button" to={ROUTES_PATHS.SHOP}>
+                    <Link className={`button ${cartProducts.productAmount <= 0 && 'pointer-events-none opacity-70'}`} to={ROUTES_PATHS.CHECKOUT}>
                         Proceed to checkout
                     </Link>
                 </div>

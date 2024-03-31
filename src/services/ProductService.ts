@@ -6,6 +6,7 @@ import {
   IPaginate,
   IFilter,
   IReviews,
+  IOrder,
 } from "../models/apiModels";
 
 export const productApi = createApi({
@@ -134,5 +135,13 @@ export const productApi = createApi({
         url: "/instaPosts",
       }),
     }),
+    updateOrder: build.mutation<IOrder, IOrder>({
+      query: (order: IOrder)  => ({
+        url: '/orders',
+        method: 'POST',
+        body: order
+      })
+    })
   }),
+
 });

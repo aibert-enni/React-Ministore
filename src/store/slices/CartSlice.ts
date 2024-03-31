@@ -1,5 +1,4 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { IProduct } from "../../models/apiModels";
 
 export interface ICartProduct {
     id: string;
@@ -18,7 +17,7 @@ export interface ICart {
     amount: number
 }
 
-interface CartState {
+export interface CartState {
     productAmount: number,
     products: ICart[],
     totalPrice: number

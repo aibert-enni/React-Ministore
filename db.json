@@ -4,21 +4,43 @@
       "id": "0",
       "name": "IPHONE 10",
       "price": "1100",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "10",
       "category": "phone",
       "brand": "apple",
       "description": "It's Iphone 10",
       "img_url": "https://images.unsplash.com/photo-1555375771-14b2a63968a9?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "reviews_ids": ["0", "1", "2"]
+      "reviews_ids": [
+        "0",
+        "1",
+        "2"
+      ]
     },
     {
       "id": "1",
       "name": "IPHONE 15",
       "price": "2000",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "20",
       "category": "phone",
       "brand": "apple",
@@ -29,8 +51,17 @@
       "id": "2",
       "name": "IPHONE 13",
       "price": "1500",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "7",
       "category": "phone",
       "brand": "apple",
@@ -41,8 +72,17 @@
       "id": "3",
       "name": "IPHONE 14",
       "price": "1700",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "14",
       "category": "phone",
       "brand": "apple",
@@ -53,8 +93,17 @@
       "id": "4",
       "name": "IPHONE 14",
       "price": "1700",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "14",
       "category": "phone",
       "brand": "apple",
@@ -65,8 +114,17 @@
       "id": "5",
       "name": "IPHONE 15",
       "price": "2000",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "20",
       "category": "phone",
       "brand": "apple",
@@ -77,8 +135,17 @@
       "id": "6",
       "name": "pink watch",
       "price": "900",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "10",
       "category": "watch",
       "brand": "apple",
@@ -89,8 +156,17 @@
       "id": "7",
       "name": "apple watch series 9",
       "price": "900",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "10",
       "category": "watch",
       "brand": "apple",
@@ -101,8 +177,17 @@
       "id": "8",
       "name": "apple watch ultra 9",
       "price": "900",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "10",
       "category": "watch",
       "brand": "apple",
@@ -113,8 +198,17 @@
       "id": "9",
       "name": "apple watch se",
       "price": "900",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "10",
       "category": "watch",
       "brand": "apple",
@@ -125,8 +219,17 @@
       "id": "10",
       "name": "apple watch ultra 9",
       "price": "900",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "10",
       "category": "watch",
       "brand": "apple",
@@ -137,8 +240,17 @@
       "id": "11",
       "name": "apple watch ultra 9",
       "price": "900",
-      "color": ["Black", "White", "Blue"],
-      "size": ["xl", "l", "m", "s"],
+      "color": [
+        "Black",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "xl",
+        "l",
+        "m",
+        "s"
+      ],
       "available": "10",
       "category": "watch",
       "brand": "apple",
@@ -169,8 +281,22 @@
       "rate": "2"
     }
   ],
-  "productCategories": [{ "name": "phone" }, { "name": "watch" }],
-  "productBrands": [{ "name": "apple" }, { "name": "samsung" }],
+  "productCategories": [
+    {
+      "name": "phone"
+    },
+    {
+      "name": "watch"
+    }
+  ],
+  "productBrands": [
+    {
+      "name": "apple"
+    },
+    {
+      "name": "samsung"
+    }
+  ],
   "postsCard": [
     {
       "title": "Get some cool gadgets in 2023",
@@ -222,5 +348,7 @@
       "post_link": "https://www.instagram.com/reel/C0CULt6OeKn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       "img_url": "https://plus.unsplash.com/premium_photo-1710167120674-1d8ae1271736?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
+  ],
+  "orders": [
   ]
 }

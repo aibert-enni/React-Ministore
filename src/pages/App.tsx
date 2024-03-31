@@ -7,6 +7,7 @@ import Shop from "./Shop"
 import Product from "./Product"
 import About from "./About"
 import Cart from "./Cart"
+import Checkout from "./Checkout"
 
 export const routes: IRoute[] = [
   {
@@ -28,6 +29,10 @@ export const routes: IRoute[] = [
   {
     path: ROUTES_PATHS.CART,
     element: <Cart />
+  },
+  {
+    path: ROUTES_PATHS.CHECKOUT,
+    element: <Checkout />
   }
 ];
 

@@ -1,3 +1,6 @@
+import { IOrderFormFields } from "../pages/Checkout";
+import { CartState, ICart, ICartProduct } from "../store/slices/CartSlice";
+
 export interface IProduct {
   id: string;
   name: string;
@@ -25,14 +28,6 @@ export interface IFilter {
   name: string;
 }
 
-// export interface IProductCategory {
-//   name: string;
-// }
-
-// export interface IProductBrand {
-//   name: string;
-// }
-
 export interface IPostCard {
   title: string;
   date: string;
@@ -52,4 +47,9 @@ export interface IReviews {
 export interface IInstaPost {
   post_link: string;
   img_url: string;
+}
+
+
+export interface IOrder extends IOrderFormFields {
+  order: CartState
 }

@@ -16,7 +16,7 @@ export const navItems = [
   { name: 'Contact', path: 'contact' }
 ]
 
-const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT, ROUTES_PATHS.CART]
+const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT, ROUTES_PATHS.CART, ROUTES_PATHS.CHECKOUT]
 
 const Header = () => {
   const { pathname } = useLocation()
