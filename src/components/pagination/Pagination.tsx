@@ -1,13 +1,13 @@
 import React, { FC, useEffect, useRef, useState } from 'react'
-import { IPaginate, IPostCard, IProduct } from '../../models/apiModels'
+import { Paginate, PostCard, Product } from '../../models/apiProductModels'
 import { sortItem } from '../../models/types'
 
 import sortArrow from '../../assets/sortArrow.svg'
 
-export type cardType = IProduct | IPostCard
+export type cardType = Product | PostCard
 
 interface PaginationProps {
-    data?: IPaginate
+    data?: Paginate
     cardElement: (props: cardType) => JSX.Element,
     sortItem: string,
     sortItems: sortItem[],

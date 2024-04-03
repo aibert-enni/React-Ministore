@@ -23,11 +23,13 @@ export interface CartState {
     totalPrice: number
 }
 
-const initialState: CartState = {
-    productAmount: 0,
-    products: [],
-    totalPrice: 0
+const sessionState: CartState = JSON.parse(sessionStorage.getItem('cart') || '{ "productAmount": "0","products": [], "totalPrice": "0"}')
+
+if(sessionState) {
+    sessionState.productAmount = Number(sessionState.productAmount)
+    sessionState.totalPrice = Number(sessionState.totalPrice)
 }
+const initialState: CartState = sessionState
 
 export const cartSlice = createSlice({
     name: 'cart',
@@ -42,6 +44,7 @@ export const cartSlice = createSlice({
                 state.products.push(action.payload)
             }
             state.totalPrice += action.payload.product.price * action.payload.amount
+            sessionStorage.setItem('cart', JSON.stringify(state))
         },
         deleteProduct(state, action: PayloadAction<string>) {
             const productIndex = state.products.findIndex(cartProduct => cartProduct.product.name === action.payload)
@@ -49,6 +52,7 @@ export const cartSlice = createSlice({
             state.productAmount -= state.products[productIndex].amount
             state.totalPrice -= state.products[productIndex].amount * state.products[productIndex].product.price
             state.products = state.products.slice(productIndex,productIndex)
+            sessionStorage.setItem('cart', JSON.stringify(state))
         }
     }
 })

@@ -1,12 +1,14 @@
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 import { ROUTES_PATHS } from '../../router/types'
 import logo from '../../assets/logo.svg'
 import searchIcon from '../../assets/search_icon.svg'
-import personIcon from '../../assets/person_icon.svg'
 import Breadcrumbs from './Breadcrumbs'
 import NavItems from './NavItems'
 import CartDropdown from './CartDropdown'
+import AccountNav from './AccountNav'
+import { useEffect } from 'react'
+import { User } from '../../models/User'
 
 export const navItems = [
   { name: 'Home', path: ROUTES_PATHS.HOME },
@@ -21,6 +23,8 @@ const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT, ROUTE
 const Header = () => {
   const { pathname } = useLocation()
 
+
+
   return (
     <div className='header'>
       <header className='container mx-auto max-w-screen-lg py-3'>
@@ -32,9 +36,7 @@ const Header = () => {
             <NavItems />
             <div className='flex gap-5 items-center'>
               <img className='cursor-pointer' src={searchIcon} alt="search icon" />
-              <Link to='signIn'>
-                <img src={personIcon} alt="sign icon" />
-              </Link>
+              <AccountNav />
               <CartDropdown />
             </div>
           </div>

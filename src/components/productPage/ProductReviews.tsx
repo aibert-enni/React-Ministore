@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { productApi } from '../../services/ProductService'
+import { appApi } from '../../services/ProductService'
 import { skipToken } from '@reduxjs/toolkit/query'
 
 import avatarIcon from '../../assets/avatar-15.svg'
@@ -10,7 +10,7 @@ interface ProductReviewsProps {
 }
 
 const ProductReviews: FC<ProductReviewsProps> = ({ reviews_ids }) => {
-    const { data: reviews } = productApi.useFetchReviewsByIdsQuery(reviews_ids ? reviews_ids : skipToken)
+    const { data: reviews } = appApi.useFetchReviewsByIdsQuery(reviews_ids ? reviews_ids : skipToken)
 
 
     return (

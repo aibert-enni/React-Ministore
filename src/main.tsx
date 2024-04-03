@@ -6,16 +6,13 @@ import 'swiper/css/navigation';
 import './index.css'
 import { Provider } from 'react-redux'
 import { store } from './store/store.ts'
-import { RouterProvider} from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
 import { router } from './router/Router.ts'
-import { register } from 'swiper/element'
-
-register()
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>,
 )

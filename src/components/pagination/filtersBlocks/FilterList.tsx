@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
-import { IFilter } from '../../../models/apiModels'
+import { Filter } from '../../../models/apiProductModels'
 
 interface FilterListProps {
     title: string,
     filter: string,
     filterHandle: (e: React.MouseEvent<HTMLLIElement>) => void,
-    items?: IFilter[],
+    items?: Filter[],
     itemHandle: (e: React.MouseEvent<HTMLLIElement>) => void
 }
 

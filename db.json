@@ -1,4 +1,24 @@
 {
+  "users": [
+    {
+      "login": "something",
+      "id": 1
+    },
+    {
+      "login": "dasdasd",
+      "firstname": "dasdsdas",
+      "lastname": "dsadasdas",
+      "password": "1457Ztex!",
+      "id": 2
+    },
+    {
+      "login": "jamalew",
+      "firstname": "hurma",
+      "lastname": "jalab",
+      "password": "1493jfnQ&",
+      "id": 3
+    }
+  ],
   "products": [
     {
       "id": "0",
@@ -349,6 +369,5 @@
       "img_url": "https://plus.unsplash.com/premium_photo-1710167120674-1d8ae1271736?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
-  "orders": [
-  ]
+  "orders": []
 }

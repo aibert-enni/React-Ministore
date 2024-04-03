@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { productApi } from '../services/ProductService';
+import { appApi } from '../services/ProductService';
 import quoteIcon from '../assets/quoteIcon.svg'
 import { starRate } from '../features/starRate';
 
@@ -10,7 +10,7 @@ interface TestimonialsSliderProps {
 }
 
 const TestimonialsSlider: FC<TestimonialsSliderProps> = ({ limit = 5 }) => {
-    const { data: testimonials } = productApi.useFetchReviewsQuery(limit)
+    const { data: testimonials } = appApi.useFetchReviewsQuery(limit)
 
 
     return (

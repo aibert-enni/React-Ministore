@@ -8,6 +8,8 @@ import Product from "./Product"
 import About from "./About"
 import Cart from "./Cart"
 import Checkout from "./Checkout"
+import { useEffect } from "react"
+import { User } from "../models/User"
 
 export const routes: IRoute[] = [
   {

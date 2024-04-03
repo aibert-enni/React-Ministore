@@ -1,10 +1,10 @@
 import { FC } from 'react'
-import { IInstaPost } from '../../models/apiModels'
+import { InstaPost } from '../../models/apiProductModels'
 
 import instagramIcon from "../../assets/instagramIcon.svg"
 
 interface InstagramPostCardsProps {
-    posts?: IInstaPost[]
+    posts?: InstaPost[]
 }
 
 const InstagramPostCards: FC<InstagramPostCardsProps> = ({ posts }) => {

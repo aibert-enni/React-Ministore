@@ -1,8 +1,7 @@
 import { SubmitHandler, useForm } from "react-hook-form"
 import { useAppSelector } from "../hooks/redux"
-import { productApi } from "../services/ProductService"
-import { IOrder } from "../models/apiModels"
-import { useEffect } from "react"
+import { appApi } from "../services/ProductService"
+import { Order } from "../models/apiProductModels"
 
 export interface IOrderFormFields {
     firstname: string
@@ -29,7 +28,7 @@ function letterValidator(value: string): string | boolean {
 const Checkout = () => {
     const cartProducts = useAppSelector(state => state.cart)
 
-    const [updateOrder] = productApi.useUpdateOrderMutation()
+    const [createOrder] = appApi.useCreateOrderMutation()
 
     const { register, handleSubmit, formState: { errors } } = useForm<IOrderFormFields>({
         defaultValues: {
@@ -39,8 +38,8 @@ const Checkout = () => {
 
     const onSubmit: SubmitHandler<IOrderFormFields> = (data) => {
         if (cartProducts.productAmount <= 0) return
-        const order: IOrder = { ...data, order: cartProducts }
-        updateOrder(order)
+        const order: Order = { ...data, order: cartProducts }
+        createOrder(order)
     }
 
     return (

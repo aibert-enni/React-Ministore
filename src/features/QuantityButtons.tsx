@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { useAppDispatch } from "../hooks/redux"
 import { ICartProduct, addProduct } from "../store/slices/CartSlice"
-import { IProduct } from "../models/apiModels"
+import { Product } from "../models/apiProductModels"
 
 interface QualityButtonsProps {
     quantity: number,

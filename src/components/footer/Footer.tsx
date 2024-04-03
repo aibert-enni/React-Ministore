@@ -1,4 +1,4 @@
-import { productApi } from "../../services/ProductService"
+import { appApi } from "../../services/ProductService"
 
 import SubscribeEmail from "./SubscribeEmail"
 import InstagramPostCards from "./InstagramPostCards"
@@ -6,7 +6,7 @@ import FooterLinks from "./FooterLinks"
 import Copyright from "./Copyright"
 
 const Footer = () => {
-    const { data: instaPosts } = productApi.useFetchIntsaPostsQuery('')
+    const { data: instaPosts } = appApi.useFetchIntsaPostsQuery('')
 
     return (
         <div className="footer">

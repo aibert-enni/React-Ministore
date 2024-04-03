@@ -11,7 +11,9 @@ export default {
       'black-1': '#272727',
       'grey-75': '#BFBFBF',
       'grey-10': '#EDF1F3',
-      'white': '#ffffff'
+      'white': '#ffffff',
+      'error': '#FF0000',
+      'blue': '#72AEC8'
     },
     extend: {},
   },

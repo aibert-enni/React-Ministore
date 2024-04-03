@@ -1,14 +1,14 @@
 import { useState } from "react"
 import Pagination, { cardType } from "../components/pagination/Pagination"
 import ProductCard from "../components/product/ProductCard"
-import { IProduct } from "../models/apiModels"
-import { productApi } from "../services/ProductService"
+import { Product } from "../models/apiProductModels"
+import { appApi } from "../services/ProductService"
 import { sortItem } from "../models/types"
 import FilterPagination from "../components/pagination/FilterPagination"
 import FilterList from "../components/pagination/filtersBlocks/FilterList"
 
 const productCard = (props: cardType): JSX.Element => {
-  props = props as IProduct
+  props = props as Product
   return <ProductCard product={props} />
 }
 
@@ -21,9 +21,9 @@ const Shop = () => {
   const [filter, setFilter] = useState<string>('all')
   const [search, setSearch] = useState<string>('')
 
-  const { data: paginate } = productApi.useFetchByPaginateQuery({ category: category, brand: brand, page: page, per_page: 9, sort: sortBy, search: search })
-  const { data: categories } = productApi.useFetchProductCategoriesQuery('')
-  const { data: brands } = productApi.useFetchProductBrandsQuery('')
+  const { data: paginate } = appApi.useFetchByPaginateQuery({ category: category, brand: brand, page: page, per_page: 9, sort: sortBy, search: search })
+  const { data: categories } = appApi.useFetchProductCategoriesQuery('')
+  const { data: brands } = appApi.useFetchProductBrandsQuery('')
 
   const sortItems: sortItem[] = [
     {

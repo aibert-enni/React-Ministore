@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from 'react'
-import { IProduct } from '../../models/apiModels'
+import { Product } from '../../models/apiProductModels'
 import { Link } from 'react-router-dom'
 import { useAppDispatch } from '../../hooks/redux'
 import { addProduct } from '../../store/slices/CartSlice'
@@ -8,7 +8,7 @@ import QuantityButtons from '../../features/QuantityButtons'
 import productConverter from '../../utils/productConverter'
 
 interface ProductSummaryProps {
-    product: IProduct
+    product: Product
 }
 
 const ProductSummary: FC<ProductSummaryProps> = ({ product }) => {

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import Product_card from './ProductCard'
-import { IProduct } from '../../models/apiModels'
+import { Product } from '../../models/apiProductModels'
 
 
 interface ProductsSliderProps {
-    products?: IProduct[],
+    products?: Product[],
     category: string
 }
 

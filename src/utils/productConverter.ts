@@ -1,7 +1,7 @@
-import { IProduct } from "../models/apiModels";
+import { Product } from "../models/apiProductModels";
 import { ICartProduct } from "../store/slices/CartSlice";
 
-function productConverter(product: IProduct, props?: Object): ICartProduct {
+function productConverter(product: Product): ICartProduct {
     const cartProduct: ICartProduct = {
         id: product.id,
         name: product.name,

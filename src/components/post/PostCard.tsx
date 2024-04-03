@@ -1,13 +1,14 @@
 import { FC } from "react"
-import { IPostCard } from "../../models/apiModels"
+import { PostCard as PostCardEntity } from "../../models/apiProductModels"
 import { Link } from "react-router-dom"
 
 
-interface PorstCardProps {
-  postCard: IPostCard
+interface PostCardProps {
+  postCard: PostCardEntity
 }
 
-const PostCard: FC<PorstCardProps> = ({ postCard }) => {
+const PostCard: FC<PostCardProps> = ({ postCard }) => {
+
   return (
     <Link className="group" to={postCard.postId}>
       <img className="w-[420x] h-[240px]" src={postCard.img_url} alt="" />

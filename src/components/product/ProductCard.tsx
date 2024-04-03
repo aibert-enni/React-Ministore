@@ -1,12 +1,12 @@
 import { FC, useEffect, useState } from 'react';
 import { useAppDispatch } from '../../hooks/redux';
 import { ICartProduct, addProduct } from '../../store/slices/CartSlice';
-import { IProduct } from '../../models/apiModels';
+import { Product } from '../../models/apiProductModels';
 import { Link } from 'react-router-dom';
 import productConverter from '../../utils/productConverter';
 
 interface ProductCardProps {
-  product: IProduct
+  product: Product
 }
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {

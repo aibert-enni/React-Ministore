@@ -1,7 +1,7 @@
-import { IOrderFormFields } from "../pages/Checkout";
-import { CartState, ICart, ICartProduct } from "../store/slices/CartSlice";
+import { IOrderFormFields as OrderFormFields } from "../pages/Checkout";
+import { CartState } from "../store/slices/CartSlice";
 
-export interface IProduct {
+export interface Product {
   id: string;
   name: string;
   price: number;
@@ -15,8 +15,8 @@ export interface IProduct {
   reviews_ids: string[]
 }
 
-export interface IPaginate {
-  data?: IProduct[];
+export interface Paginate {
+  data?: Product[];
   first?: number;
   items?: number;
   last?: number;
@@ -24,11 +24,11 @@ export interface IPaginate {
   prev?: number | null;
 }
 
-export interface IFilter {
+export interface Filter {
   name: string;
 }
 
-export interface IPostCard {
+export interface PostCard {
   title: string;
   date: string;
   category: string;
@@ -36,7 +36,7 @@ export interface IPostCard {
   postId: string;
 }
 
-export interface IReviews {
+export interface Reviews {
   username: string;
   text: string;
   date: string;
@@ -44,12 +44,12 @@ export interface IReviews {
   productId: string;
 }
 
-export interface IInstaPost {
+export interface InstaPost {
   post_link: string;
   img_url: string;
 }
 
 
-export interface IOrder extends IOrderFormFields {
+export interface Order extends OrderFormFields {
   order: CartState
 }

@@ -1,9 +1,8 @@
 //assets
-
 import saleBlockImg from "../assets/saleBlockImage.png";
-//
+
 import { Link } from "react-router-dom";
-import { productApi } from "../services/ProductService";
+import { appApi } from "../services/ProductService";
 import Products_slider from "../components/product/ProductsSlider";
 import { PostCard_slider } from "../components/post/PostCardSlider";
 import Testimonials_slider from "../components/TestimonialsSlider";
@@ -13,9 +12,9 @@ import Features from "../components/Features";
 
 
 const Home = () => {
-  const { data: phones } = productApi.useFetchByCategoryQuery('phone');
-  const { data: watches } = productApi.useFetchByCategoryQuery("watch");
-  const { data: postsCards } = productApi.useFetchPostCardsQuery("");
+  const { data: phones } = appApi.useFetchByCategoryQuery('phone');
+  const { data: watches } = appApi.useFetchByCategoryQuery("watch");
+  const { data: postsCards } = appApi.useFetchPostCardsQuery("");
 
   return (
     <main className="main-page">

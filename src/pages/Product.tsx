@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { productApi } from '../services/ProductService'
+import { appApi } from '../services/ProductService'
 import { useState } from 'react'
 import ProductDescription from '../components/productPage/ProductDescription'
 import ProductSummary from '../components/productPage/ProductSummary'
@@ -16,13 +16,13 @@ enum SECTION_NAMES {
 const Product = () => {
     const { id } = useParams()
 
-    const { data: productList } = productApi.useFetchByIdQuery(id ? id : '0')
+    const { data: productList } = appApi.useFetchByIdQuery(id ? id : '0')
 
     const product = productList ? productList[0] : undefined
 
     const [section, setSection] = useState<SECTION_NAMES>(SECTION_NAMES.DESCRIPTION)
 
-    const { data: products } = productApi.useFetchByCategoryQuery(product?.category ? product?.category : skipToken)
+    const { data: products } = appApi.useFetchByCategoryQuery(product?.category ? product?.category : skipToken)
 
     function showSection() {
         switch (section) {

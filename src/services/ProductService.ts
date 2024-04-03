@@ -1,19 +1,20 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import {
-  IProduct,
-  IPostCard,
-  IInstaPost,
-  IPaginate,
-  IFilter,
-  IReviews,
-  IOrder,
-} from "../models/apiModels";
+  Product,
+  PostCard,
+  InstaPost,
+  Paginate,
+  Filter,
+  Reviews,
+  Order,
+} from "../models/apiProductModels";
+import { IUser, SignFields } from "../models/apiUserModels";
 
-export const productApi = createApi({
+export const appApi = createApi({
   reducerPath: "productApi",
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000" }),
   endpoints: (build) => ({
-    fetchById: build.query<IProduct[], string>({
+    fetchById: build.query<Product[], string>({
       query: (id: string) => ({
         url: "products",
         params: {
@@ -21,7 +22,7 @@ export const productApi = createApi({
         }
       })
     }),
-    fetchByCategory: build.query<IProduct[], string | null>({
+    fetchByCategory: build.query<Product[], string | null>({
       query: (category: string | null) => {
         const params: { [key: string]: string } = {};
         if (category != null) params.category = category;
@@ -33,7 +34,7 @@ export const productApi = createApi({
       },
     }),
     fetchByPaginate: build.query<
-      IPaginate,
+      Paginate,
       {
         category: string;
         brand: string;
@@ -57,7 +58,7 @@ export const productApi = createApi({
           params: params,
         };
       },
-      transformResponse(data: IProduct[], meta): IPaginate {
+      transformResponse(data: Product[], meta): Paginate {
         const Link: string[] | undefined = meta?.response?.headers
           .get("Link")
           ?.split(",");
@@ -98,22 +99,22 @@ export const productApi = createApi({
         };
       },
     }),
-    fetchProductCategories: build.query<IFilter[], "">({
+    fetchProductCategories: build.query<Filter[], "">({
       query: () => ({
         url: "/productCategories",
       }),
     }),
-    fetchProductBrands: build.query<IFilter[], "">({
+    fetchProductBrands: build.query<Filter[], "">({
       query: () => ({
         url: "/productBrands",
       }),
     }),
-    fetchPostCards: build.query<IPostCard[], string>({
+    fetchPostCards: build.query<PostCard[], string>({
       query: () => ({
         url: "/postsCard",
       }),
     }),
-    fetchReviews: build.query<IReviews[], number>({
+    fetchReviews: build.query<Reviews[], number>({
       query: (limit: number) => ({
         url: "/reviews",
         params: {
@@ -121,7 +122,7 @@ export const productApi = createApi({
         },
       }),
     }),
-    fetchReviewsByIds: build.query<IReviews[], string[]>({
+    fetchReviewsByIds: build.query<Reviews[], string[]>({
       query: (ids: string[]) => {
         let url = "/reviews?"
         ids.map(id => url += `id=${id}&`)
@@ -130,18 +131,37 @@ export const productApi = createApi({
         }
       },
     }),
-    fetchIntsaPosts: build.query<IInstaPost[], string>({
+    fetchIntsaPosts: build.query<InstaPost[], string>({
       query: () => ({
         url: "/instaPosts",
       }),
     }),
-    updateOrder: build.mutation<IOrder, IOrder>({
-      query: (order: IOrder)  => ({
+    createOrder: build.mutation<Order, Order>({
+      query: (order: Order)  => ({
         url: '/orders',
         method: 'POST',
         body: order
       })
-    })
+    }),
+    // below user requests
+    fetchUser: build.query<IUser[], SignFields | undefined>({
+      query: (signFields: SignFields | undefined) => {
+        if(!signFields) signFields = {login: '', password: ''}
+        return {
+          url: '/users',
+          params: {
+              login: signFields.login,
+              password: signFields.password
+          }
+        }
+      }
   }),
-
+  createUser: build.mutation<IUser, IUser>({
+      query: (user: IUser) => ({
+          url: '/users',
+          method: 'POST',
+          body: user
+      })
+  })
+  }),
 });
