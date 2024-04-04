@@ -1,12 +1,11 @@
 import { useParams } from 'react-router-dom'
-import { appApi } from '../services/ProductService'
+import { appApi } from '../services/ApiService'
 import { useState } from 'react'
 import ProductDescription from '../components/productPage/ProductDescription'
 import ProductSummary from '../components/productPage/ProductSummary'
 import ProductReviews from '../components/productPage/ProductReviews'
 import ProductsSlider from '../components/product/ProductsSlider'
 import { skipToken } from '@reduxjs/toolkit/query'
-import productConverter from '../utils/productConverter'
 
 enum SECTION_NAMES {
     DESCRIPTION,

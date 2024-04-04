@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { appApi } from '../../services/ProductService'
+import { appApi } from '../../services/ApiService'
 import { skipToken } from '@reduxjs/toolkit/query'
 
 import avatarIcon from '../../assets/avatar-15.svg'

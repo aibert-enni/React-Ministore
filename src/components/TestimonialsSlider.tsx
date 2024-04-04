@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { appApi } from '../services/ProductService';
+import { appApi } from '../services/ApiService';
 import quoteIcon from '../assets/quoteIcon.svg'
 import { starRate } from '../features/starRate';
 

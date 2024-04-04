@@ -1,7 +1,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form'
 import logo from '../assets/logo.svg'
 import { useState } from 'react'
-import { appApi } from '../services/ProductService'
+import { appApi } from '../services/ApiService'
 import { IUser } from '../models/apiUserModels'
 import { useNavigate } from 'react-router-dom'
 import { ROUTES_PATHS } from '../router/types'

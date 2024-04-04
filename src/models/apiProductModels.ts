@@ -53,3 +53,11 @@ export interface InstaPost {
 export interface Order extends OrderFormFields {
   order: CartState
 }
+
+export interface Question {
+  fullname: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}

@@ -6,7 +6,8 @@ export enum ROUTES_PATHS {
   CART = "/cart",
   CHECKOUT = "/checkout",
   LOGIN = "/login",
-  SIGN_UP = "/signUp"
+  SIGN_UP = "/signUp",
+  CONTACT = "/contact"
 }
 
 export interface IRoute {

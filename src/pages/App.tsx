@@ -8,8 +8,8 @@ import Product from "./Product"
 import About from "./About"
 import Cart from "./Cart"
 import Checkout from "./Checkout"
-import { useEffect } from "react"
-import { User } from "../models/User"
+import Contact from "./Contact"
+import Validator from "../models/Validator"
 
 export const routes: IRoute[] = [
   {
@@ -35,6 +35,10 @@ export const routes: IRoute[] = [
   {
     path: ROUTES_PATHS.CHECKOUT,
     element: <Checkout />
+  },
+  {
+    path: ROUTES_PATHS.CONTACT,
+    element: <Contact />
   }
 ];
 

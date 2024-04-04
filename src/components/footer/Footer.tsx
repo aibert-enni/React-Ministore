@@ -1,4 +1,4 @@
-import { appApi } from "../../services/ProductService"
+import { appApi } from "../../services/ApiService"
 
 import SubscribeEmail from "./SubscribeEmail"
 import InstagramPostCards from "./InstagramPostCards"

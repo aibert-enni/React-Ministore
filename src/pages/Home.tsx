@@ -2,7 +2,7 @@
 import saleBlockImg from "../assets/saleBlockImage.png";
 
 import { Link } from "react-router-dom";
-import { appApi } from "../services/ProductService";
+import { appApi } from "../services/ApiService";
 import Products_slider from "../components/product/ProductsSlider";
 import { PostCard_slider } from "../components/post/PostCardSlider";
 import Testimonials_slider from "../components/TestimonialsSlider";

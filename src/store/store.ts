@@ -1,5 +1,5 @@
 import {combineSlices, configureStore } from "@reduxjs/toolkit";
-import { appApi } from "../services/ProductService";
+import { appApi } from "../services/ApiService";
 import { cartSlice } from "./slices/CartSlice";
 import { userSlice } from "./slices/UserSlice";
 

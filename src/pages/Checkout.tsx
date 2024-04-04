@@ -1,7 +1,8 @@
 import { SubmitHandler, useForm } from "react-hook-form"
 import { useAppSelector } from "../hooks/redux"
-import { appApi } from "../services/ProductService"
+import { appApi } from "../services/ApiService"
 import { Order } from "../models/apiProductModels"
+import Validator from "../models/Validator"
 
 export interface IOrderFormFields {
     firstname: string
@@ -18,19 +19,13 @@ export interface IOrderFormFields {
     payment: string
 }
 
-function letterValidator(value: string): string | boolean {
-    if (!/^[A-Za-z]+$/.test(value)) {
-        return "use only letters"
-    }
-    return true
-}
 
 const Checkout = () => {
     const cartProducts = useAppSelector(state => state.cart)
 
     const [createOrder] = appApi.useCreateOrderMutation()
 
-    const { register, handleSubmit, formState: { errors } } = useForm<IOrderFormFields>({
+    const { register, reset, handleSubmit, formState: { errors } } = useForm<IOrderFormFields>({
         defaultValues: {
             payment: 'direct bank transfer'
         }
@@ -40,6 +35,7 @@ const Checkout = () => {
         if (cartProducts.productAmount <= 0) return
         const order: Order = { ...data, order: cartProducts }
         createOrder(order)
+        reset()
     }
 
     return (
@@ -53,7 +49,7 @@ const Checkout = () => {
                                 <label className="font-light">First name *</label>
                                 <input className="form-input" {...register("firstname", {
                                     required: "required firstname",
-                                    validate: letterValidator
+                                    validate: Validator.letters
                                 })} type="text" />
                                 {errors.firstname && <p className="text-[#72AEC8]">{errors.firstname.message}</p>}
                             </div>
@@ -61,7 +57,7 @@ const Checkout = () => {
                                 <label className="font-light">Last name *</label>
                                 <input className="form-input" {...register("lastname", {
                                     required: true,
-                                    validate: letterValidator
+                                    validate: Validator.letters
                                 })} type="text" />
                                 {errors.lastname && <p className="text-[#72AEC8]">{errors.lastname.message}</p>}
                             </div>
@@ -90,7 +86,7 @@ const Checkout = () => {
                                 <label className="font-light">Town/City *</label>
                                 <input className="form-input" {...register("city", {
                                     required: true,
-                                    validate: letterValidator
+                                    validate: Validator.letters
                                 })} type="text" />
                                 {errors.city && <p className="text-[#72AEC8]">{errors.city.message}</p>}
                             </div>
@@ -98,7 +94,7 @@ const Checkout = () => {
                                 <label className="font-light">State *</label>
                                 <input className="form-input" {...register("state", {
                                     required: true,
-                                    validate: letterValidator
+                                    validate: Validator.letters
                                 })} type="text" />
                                 {errors.state && <p className="text-[#72AEC8]">{errors.state.message}</p>}
                             </div>
@@ -114,7 +110,7 @@ const Checkout = () => {
                                 <label className="font-light">Phone *</label>
                                 <input className="form-input" {...register("phone", {
                                     required: true,
-                                    pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
+                                    validate: Validator.phone
                                 })} type="tel" />
                                 {errors.phone && <p className="text-[#72AEC8]">{errors.phone.message}</p>}
                             </div>
@@ -122,12 +118,7 @@ const Checkout = () => {
                                 <label className="font-light">Email address *</label>
                                 <input className="form-input" {...register("email", {
                                     required: true,
-                                    validate: (value) => {
-                                        if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value)) {
-                                            return "invalid email"
-                                        }
-                                        return true
-                                    }
+                                    validate: Validator.email
                                 })} type="email" />
                                 {errors.email && <p className="text-[#72AEC8]">{errors.email.message}</p>}
                             </div>

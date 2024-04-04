@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, useState } from 'react';
 import { useAppDispatch } from '../../hooks/redux';
 import { ICartProduct, addProduct } from '../../store/slices/CartSlice';
 import { Product } from '../../models/apiProductModels';

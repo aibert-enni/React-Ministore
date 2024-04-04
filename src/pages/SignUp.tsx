@@ -1,6 +1,6 @@
 import { SubmitHandler, useForm } from 'react-hook-form'
 import logo from '../assets/logo.svg'
-import { appApi } from '../services/ProductService'
+import { appApi } from '../services/ApiService'
 import { useEffect } from 'react'
 import { IUser } from '../models/apiUserModels'
 import { Link, useNavigate } from 'react-router-dom'

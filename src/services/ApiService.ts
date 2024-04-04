@@ -7,6 +7,7 @@ import {
   Filter,
   Reviews,
   Order,
+  Question,
 } from "../models/apiProductModels";
 import { IUser, SignFields } from "../models/apiUserModels";
 
@@ -141,6 +142,13 @@ export const appApi = createApi({
         url: '/orders',
         method: 'POST',
         body: order
+      })
+    }),
+    createQuestion: build.mutation<Question, Question>({
+      query: (question: Question) => ({
+        url: '/questions',
+        method: 'POST',
+        body: question
       })
     }),
     // below user requests
