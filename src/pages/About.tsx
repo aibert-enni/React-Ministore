@@ -15,7 +15,7 @@ const About = () => {
                         Risus augue curabitur diam senectus congue velit et. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Quam libero etiam et in ac at quis.
                         Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Quam libero etiam et in ac at quis. Risus augue curabitur diam senectus congue velit et.
                     </p>
-                    <Link className='button bg-[#272727] flex items-center w-fit' to={ROUTES_PATHS.SHOP}>
+                    <Link className='button bg-black-1 flex items-center w-fit' to={ROUTES_PATHS.SHOP}>
                         Shop Our store
                     </Link>
                 </div>

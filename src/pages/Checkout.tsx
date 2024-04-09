@@ -42,10 +42,10 @@ const Checkout = () => {
         <div className="container-lg my-28">
             <div>
                 <form className="flex flex-col gap-28" onSubmit={handleSubmit(onSubmit)}>
-                    <div className="grid grid-cols-2 *:text-[#3A3A3A] gap-5">
+                    <div className="grid grid-cols-2 *:text-black-2 gap-5">
                         <div className="flex flex-col gap-2">
                             <div className="flex flex-col">
-                                <p className="uppercase text-[#272727] text-2xl mb-7">Billing details</p>
+                                <p className="uppercase text-black-1 text-2xl mb-7">Billing details</p>
                                 <label className="font-light">First name *</label>
                                 <input className="form-input" {...register("firstname", {
                                     required: "required firstname",
@@ -124,7 +124,7 @@ const Checkout = () => {
                             </div>
                         </div>
                         <div className="flex flex-col">
-                            <p className="uppercase text-[#272727] text-2xl mb-7">Additional Information</p>
+                            <p className="uppercase text-black-1 text-2xl mb-7">Additional Information</p>
                             <div className="flex flex-col">
                                 <label className="font-light">Order notes(optional)</label>
                                 <input {...register('orderNotes')} className="form-input" type="text" />
@@ -138,19 +138,19 @@ const Checkout = () => {
                             <p className="text-[#72AEC8]">${cartProducts.totalPrice}.00</p>
                         </div>
                         <div>
-                            <div className="flex items-center gap-3 font-light text-[#3A3A3A]">
+                            <div className="flex items-center gap-3 font-light text-black-2">
                                 <input {...register('payment')} className="border-[#D3D3D3]" type="radio" name="payment" id="bank" value="direct bank transfer" />
                                 <label htmlFor="bank">Direct bank transfer</label>
                             </div>
-                            <div className="flex items-center gap-3 font-light text-[#3A3A3A]">
+                            <div className="flex items-center gap-3 font-light text-black-2">
                                 <input {...register('payment')} type="radio" name="payment" id="check" value="check payments" />
                                 <label htmlFor="check">Check payments</label>
                             </div>
-                            <div className="flex items-center gap-3 font-light text-[#3A3A3A]">
+                            <div className="flex items-center gap-3 font-light text-black-2">
                                 <input {...register('payment')} type="radio" name="payment" id="cash" value="cash on delivery" />
                                 <label htmlFor="cash">Cash on delivery</label>
                             </div>
-                            <div className="flex items-center gap-3 font-light text-[#3A3A3A]">
+                            <div className="flex items-center gap-3 font-light text-black-2">
                                 <input {...register('payment')} type="radio" name="payment" id="paypal" value="paypal" />
                                 <label htmlFor="paypal">PayPal</label>
                             </div>

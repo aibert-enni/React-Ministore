@@ -110,7 +110,7 @@ const SignUp = () => {
                         })} className="focus:outline-none border rounded px-2 py-1 border-[#a6a6a6]" type="text" />
                         {errors.password && <p className='text-error'>{errors.password.message}</p>}
                     </div>
-                    <button className="bg-[#272727] rounded text-white py-2">Sign up</button>
+                    <button className="bg-black-1 rounded text-white py-2">Sign up</button>
                 </form>
                 <Link to={ROUTES_PATHS.LOGIN}>
                     Already have account? <span className='text-blue font-bold'>Login</span>

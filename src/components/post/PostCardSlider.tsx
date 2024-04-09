@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { Pagination } from "swiper/modules"
 import { SwiperSlide, Swiper } from "swiper/react"
 import Post_card from "./PostCard"
-import { PostCard } from "../../models/apiProductModels"
+import { PostCard } from "../../models/apiBlogModels"
 
 interface PostCard_slider_Props {
   postCards?: PostCard[],

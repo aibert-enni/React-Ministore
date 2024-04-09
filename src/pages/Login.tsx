@@ -3,7 +3,7 @@ import logo from '../assets/logo.svg'
 import { useState } from 'react'
 import { appApi } from '../services/ApiService'
 import { IUser } from '../models/apiUserModels'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { ROUTES_PATHS } from '../router/types'
 import { useAppDispatch } from '../hooks/redux'
 import { initUser } from '../store/slices/UserSlice'
@@ -63,9 +63,11 @@ const Login = () => {
                         })} className="focus:outline-none border rounded px-2 py-1 border-[#a6a6a6]" type="text" />
                         {errors.password && <p className='text-error'>{errors.password.message}</p>}
                     </div>
-                    <button className="bg-[#272727] rounded text-white py-2">Login</button>
+                    <button className="bg-black-1 rounded text-white py-2">Login</button>
                 </form>
-
+                <Link to={ROUTES_PATHS.SIGN_UP}>
+                    sign up
+                </Link>
             </div>
         </div>
     )

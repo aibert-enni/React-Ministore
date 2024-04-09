@@ -9,7 +9,8 @@ import About from "./About"
 import Cart from "./Cart"
 import Checkout from "./Checkout"
 import Contact from "./Contact"
-import Validator from "../models/Validator"
+import CreatePost from "./CreatePost"
+import BlogPost from "./BlogPost"
 
 export const routes: IRoute[] = [
   {
@@ -39,6 +40,14 @@ export const routes: IRoute[] = [
   {
     path: ROUTES_PATHS.CONTACT,
     element: <Contact />
+  },
+  {
+    path: ROUTES_PATHS.CREATE_POST,
+    element: <CreatePost />
+  },
+  {
+    path: ROUTES_PATHS.BLOG_POST,
+    element: <BlogPost />
   }
 ];
 

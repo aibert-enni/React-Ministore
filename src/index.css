@@ -2,39 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .container-lg {
-        @apply container mx-auto max-w-screen-lg
-    }
-    .button {
-        @apply px-10 h-[53px] bg-[#272727] font-medium uppercase text-white flex items-center w-fit
-    }
-    .form-input {
-        @apply h-11 border border-[#D9D9D9] focus:outline-none p-5 mt-2
-    }
+@layer components {
+  .container-lg {
+    @apply container mx-auto max-w-screen-lg;
+  }
+  .button {
+    @apply px-10 h-[40px] bg-black-1 font-medium uppercase text-white flex items-center w-fit;
+  }
+  .form-input {
+    @apply h-11 border border-[#D9D9D9] focus:outline-none p-5 mt-2;
+  }
+  .tag {
+    @apply cursor-pointer p-2 rounded-md inline-block bg-black-2 text-white;
+  }
 }
 
 :root {
-    --swiper-pagination-bullet-inactive-color: #737272;
-    --swiper-pagination-color: #4A4A4A;
+  --swiper-pagination-bullet-inactive-color: #737272;
+  --swiper-pagination-color: #4a4a4a;
 }
 
-body{
-    font-size: 14px;
-    color: #272727;
+body {
+  font-size: 14px;
+  color: #272727;
 }
 
 .swiper-pagination-bullets {
-    position: relative;
-    margin-top: 50px;
+  position: relative;
+  margin-top: 50px;
 }
 
 .swiper-button-disabled {
-    color: #D7DDDF;
+  color: #d7dddf;
 }
 
-.swiper-button-prev, .swiper-button-next {
-    top: 0;
-    margin-top: auto;
-    color: #72AEC8;
+.swiper-button-prev,
+.swiper-button-next {
+  top: 0;
+  margin-top: auto;
+  color: #72aec8;
 }

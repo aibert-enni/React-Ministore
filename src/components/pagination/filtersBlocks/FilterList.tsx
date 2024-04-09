@@ -13,7 +13,7 @@ const FilterList: FC<FilterListProps> = ({ title, filter, filterHandle, items, i
     return (
         <div>
             <p className='uppercase text-lg underline underline-offset-2 mb-3'>{title}</p>
-            <ul className='text-[#3A3A3A] flex flex-col gap-2'>
+            <ul className='text-black-2 flex flex-col gap-2'>
                 {title.toLocaleLowerCase() === 'categories' && <li className={`capitalize ${filter === 'all' ? 'text-[#72AEC8]' : 'cursor-pointer hover:text-[#72AEC8]'}`} onClick={(e) => {
                     if (filter !== 'all') {
                         itemHandle(e)

@@ -1,7 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import {
   Product,
-  PostCard,
   InstaPost,
   Paginate,
   Filter,
@@ -10,11 +9,13 @@ import {
   Question,
 } from "../models/apiProductModels";
 import { IUser, SignFields } from "../models/apiUserModels";
+import { PostCard, PostForm, PostCategories, Post } from "../models/apiBlogModels";
 
 export const appApi = createApi({
   reducerPath: "productApi",
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000" }),
   endpoints: (build) => ({
+    // product requests
     fetchById: build.query<Product[], string>({
       query: (id: string) => ({
         url: "products",
@@ -110,11 +111,7 @@ export const appApi = createApi({
         url: "/productBrands",
       }),
     }),
-    fetchPostCards: build.query<PostCard[], string>({
-      query: () => ({
-        url: "/postsCard",
-      }),
-    }),
+    // other requests
     fetchReviews: build.query<Reviews[], number>({
       query: (limit: number) => ({
         url: "/reviews",
@@ -151,7 +148,7 @@ export const appApi = createApi({
         body: question
       })
     }),
-    // below user requests
+    // user requests
     fetchUser: build.query<IUser[], SignFields | undefined>({
       query: (signFields: SignFields | undefined) => {
         if(!signFields) signFields = {login: '', password: ''}
@@ -163,13 +160,34 @@ export const appApi = createApi({
           }
         }
       }
-  }),
-  createUser: build.mutation<IUser, IUser>({
+    }),
+    createUser: build.mutation<IUser, IUser>({
       query: (user: IUser) => ({
           url: '/users',
           method: 'POST',
           body: user
       })
-  })
+    }),
+    // post requests
+    fetchPostCategories: build.query<PostCategories[], string>({
+      query: (value: string) => ({
+        url: '/postCategories',
+        params: {
+          name_like: `^${value}`
+        }
+      })
+    }),
+    fetchPostCards: build.query<PostCard[], string>({
+      query: () => ({
+        url: "/postsCard",
+      }),
+    }),
+    createPost: build.mutation<Post, Post>({
+      query: (post: Post) => ({
+        url: '/post',
+        method: 'POST',
+        body: post
+      })
+    })
   }),
 });

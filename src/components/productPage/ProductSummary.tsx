@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, useState } from 'react'
 import { Product } from '../../models/apiProductModels'
 import { Link } from 'react-router-dom'
 import { useAppDispatch } from '../../hooks/redux'
@@ -30,8 +30,8 @@ const ProductSummary: FC<ProductSummaryProps> = ({ product }) => {
     return (
         <div className='flex gap-5'>
             <img className='w-[500px] h-[600px]' src={product?.img_url} alt="product photo" />
-            <div className='flex flex-col gap-4 text-[#3A3A3A]'>
-                <h1 className='uppercase text-[30px] text[#272727]'>{product?.name}</h1>
+            <div className='flex flex-col gap-4 text-black-2'>
+                <h1 className='uppercase text-[30px] textblack-1'>{product?.name}</h1>
                 <p className='text-[#72AEC8] text-[40px]'>${product?.price}.00</p>
                 <p className='font-light'>{product?.description}</p>
                 <div>

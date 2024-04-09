@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { PostCard as PostCardEntity } from "../../models/apiProductModels"
+import { PostCard as PostCardEntity } from "../../models/apiBlogModels"
 import { Link } from "react-router-dom"
 
 

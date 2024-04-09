@@ -18,6 +18,10 @@ const AccountDropdown = () => {
                     <p>{user.user.firstname} {user.user.lastname}</p>
                 </div>
                 <div className='h-[0.1px] bg-grey-75'></div>
+                <Link className='text-center' to={ROUTES_PATHS.CREATE_POST}>
+                    Write post
+                </Link>
+                <div className='h-[0.1px] bg-grey-75'></div>
                 <button onClick={() => dispatch(logOut())}>Log out</button>
             </div>
         )

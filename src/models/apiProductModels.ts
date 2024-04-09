@@ -28,14 +28,6 @@ export interface Filter {
   name: string;
 }
 
-export interface PostCard {
-  title: string;
-  date: string;
-  category: string;
-  img_url: string;
-  postId: string;
-}
-
 export interface Reviews {
   username: string;
   text: string;

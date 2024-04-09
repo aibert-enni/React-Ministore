@@ -6,7 +6,7 @@ interface ProductDescriptionProps {
 
 const ProductDescription: FC<ProductDescriptionProps> = ({ text }) => {
     return (
-        <div className='flex flex-col text-[#3A3A3A] font-light'>
+        <div className='flex flex-col text-black-2 font-light'>
             <p>Product Description</p>
             <p>{text}</p>
         </div>

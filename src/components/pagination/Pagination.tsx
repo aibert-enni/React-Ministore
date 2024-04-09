@@ -1,8 +1,9 @@
 import { FC, useEffect, useRef, useState } from 'react'
-import { Paginate, PostCard, Product } from '../../models/apiProductModels'
+import { Paginate, Product } from '../../models/apiProductModels'
 import { sortItem } from '../../models/types'
 
 import sortArrow from '../../assets/sortArrow.svg'
+import { PostCard } from '../../models/apiBlogModels'
 
 export type cardType = Product | PostCard
 
