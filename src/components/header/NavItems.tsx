@@ -20,8 +20,8 @@ const NavItems = () => {
                     <Link className='uppercase font-medium hover:underline underline-offset-2' to={ROUTES_PATHS.CART}>cart</Link>
                 </div>
             </div>
-            <Link className='uppercase font-medium hover:underline underline-offset-2' to={'/about'}>blogs</Link>
-            <Link className='uppercase font-medium hover:underline underline-offset-2' to={'/contact'}>contact</Link>
+            <Link className='uppercase font-medium hover:underline underline-offset-2' to={ROUTES_PATHS.BLOG}>blogs</Link>
+            <Link className='uppercase font-medium hover:underline underline-offset-2' to={ROUTES_PATHS.CONTACT}>contact</Link>
         </div>
     )
 }

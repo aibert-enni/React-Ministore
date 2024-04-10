@@ -11,6 +11,7 @@ import Checkout from "./Checkout"
 import Contact from "./Contact"
 import CreatePost from "./CreatePost"
 import BlogPost from "./BlogPost"
+import Blog from "./Blog"
 
 export const routes: IRoute[] = [
   {
@@ -40,6 +41,10 @@ export const routes: IRoute[] = [
   {
     path: ROUTES_PATHS.CONTACT,
     element: <Contact />
+  },
+  {
+    path: ROUTES_PATHS.BLOG,
+    element: <Blog />
   },
   {
     path: ROUTES_PATHS.CREATE_POST,

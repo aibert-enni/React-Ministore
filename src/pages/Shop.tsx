@@ -21,7 +21,7 @@ const Shop = () => {
   const [filter, setFilter] = useState<string>('all')
   const [search, setSearch] = useState<string>('')
 
-  const { data: paginate } = appApi.useFetchByPaginateQuery({ category: category, brand: brand, page: page, per_page: 9, sort: sortBy, search: search })
+  const { data: paginate } = appApi.useFetchProductByPaginateQuery({ category: category, brand: brand, page: page, per_page: 9, sort: sortBy, search: search })
   const { data: categories } = appApi.useFetchProductCategoriesQuery('')
   const { data: brands } = appApi.useFetchProductBrandsQuery('')
 

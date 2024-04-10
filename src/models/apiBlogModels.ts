@@ -28,3 +28,9 @@ export interface Post {
     categories: string[]
     date: string
 }
+
+export interface PostComment {
+    post_id: string
+    user_id: string
+    comment: string
+}

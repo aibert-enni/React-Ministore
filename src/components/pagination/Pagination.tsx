@@ -3,9 +3,9 @@ import { Paginate, Product } from '../../models/apiProductModels'
 import { sortItem } from '../../models/types'
 
 import sortArrow from '../../assets/sortArrow.svg'
-import { PostCard } from '../../models/apiBlogModels'
+import { Post } from '../../models/apiBlogModels'
 
-export type cardType = Product | PostCard
+export type cardType = Product | Post
 
 interface PaginationProps {
     data?: Paginate

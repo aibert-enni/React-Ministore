@@ -1,5 +1,6 @@
 import { IOrderFormFields as OrderFormFields } from "../pages/Checkout";
 import { CartState } from "../store/slices/CartSlice";
+import { Post } from "./apiBlogModels";
 
 export interface Product {
   id: string;
@@ -16,7 +17,7 @@ export interface Product {
 }
 
 export interface Paginate {
-  data?: Product[];
+  data?: Product[] | Post[];
   first?: number;
   items?: number;
   last?: number;

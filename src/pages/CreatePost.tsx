@@ -43,7 +43,7 @@ const CreatePost = () => {
             coverLink: data.coverLink,
             content: postContent,
             categories: chosenCategories,
-            date: `${currentDate.getDate()}.${currentDate.getMonth()}.${currentDate.getFullYear()}`
+            date: currentDate.toDateString()
         }
         createPost(post)
     }

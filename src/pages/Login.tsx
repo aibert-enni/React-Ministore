@@ -20,7 +20,7 @@ const Login = () => {
 
     const [error, setError] = useState<string>()
 
-    const [getUser] = appApi.useLazyFetchUserQuery()
+    const [getUser] = appApi.useLazyFetchCheckUserQuery()
 
     const navigate = useNavigate()
 

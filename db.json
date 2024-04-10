@@ -330,6 +330,26 @@
       "id": 1
     }
   ],
+  "postComment": [
+    {
+      "post_id": "1",
+      "comment": "Hello",
+      "user_id": 3,
+      "id": 1
+    },
+    {
+      "post_id": "1",
+      "comment": "dsadasd",
+      "user_id": 2,
+      "id": 2
+    },
+    {
+      "post_id": "1",
+      "comment": "cool",
+      "user_id": 2,
+      "id": 3
+    }
+  ],
   "postsCard": [
     {
       "title": "Get some cool gadgets in 2023",

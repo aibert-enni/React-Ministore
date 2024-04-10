@@ -11,11 +11,11 @@ export const navItems = [
   { name: 'Home', path: ROUTES_PATHS.HOME },
   { name: 'Shop', path: ROUTES_PATHS.SHOP },
   { name: 'About', path: ROUTES_PATHS.ABOUT },
-  { name: 'Blogs', path: 'blogs' },
+  { name: 'Blogs', path: ROUTES_PATHS.BLOG },
   { name: 'Contact', path: ROUTES_PATHS.CONTACT }
 ]
 
-const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT, ROUTES_PATHS.CART, ROUTES_PATHS.CHECKOUT, ROUTES_PATHS.CONTACT]
+const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT, ROUTES_PATHS.CART, ROUTES_PATHS.CHECKOUT, ROUTES_PATHS.CONTACT, ROUTES_PATHS.BLOG]
 
 const Header = () => {
   const { pathname } = useLocation()
