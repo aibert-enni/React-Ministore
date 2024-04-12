@@ -2,11 +2,11 @@ import { FC } from "react"
 import { Link } from "react-router-dom"
 import { Pagination } from "swiper/modules"
 import { SwiperSlide, Swiper } from "swiper/react"
-import Post_card from "./PostCard"
-import { PostCard } from "../../models/apiBlogModels"
+import PostCard from "./PostCard"
+import { Post, } from "../../models/apiBlogModels"
 
 interface PostCard_slider_Props {
-  postCards?: PostCard[],
+  postCards?: Post[],
   category: string
 }
 
@@ -22,7 +22,7 @@ export const PostCard_slider: FC<PostCard_slider_Props> = ({ postCards, category
         </Link>
       </div>
       <Swiper className='MySwiper mt-8' slidesPerView={4} spaceBetween={20} modules={[Pagination]} pagination={{ clickable: true }} >
-        {postCards?.map(postCard => <SwiperSlide><Post_card postCard={postCard} /></SwiperSlide>)}
+        {postCards?.map(postCard => <SwiperSlide><PostCard postCard={postCard} /></SwiperSlide>)}
       </Swiper>
     </div>
   )

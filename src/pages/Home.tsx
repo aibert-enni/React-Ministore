@@ -14,7 +14,7 @@ import Features from "../components/Features";
 const Home = () => {
   const { data: phones } = appApi.useFetchByCategoryQuery('phone');
   const { data: watches } = appApi.useFetchByCategoryQuery("watch");
-  const { data: postsCards } = appApi.useFetchPostCardsQuery("");
+  const { data: postsCards } = appApi.useFetchPostsQuery("");
 
   return (
     <main className="main-page">

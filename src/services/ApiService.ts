@@ -186,9 +186,9 @@ export const appApi = createApi({
         }
       })
     }),
-    fetchPostCards: build.query<PostCard[], string>({
+    fetchPosts: build.query<Post[], string>({
       query: () => ({
-        url: "/postsCard",
+        url: "/post",
       }),
     }),
     createPost: build.mutation<Post, Post>({

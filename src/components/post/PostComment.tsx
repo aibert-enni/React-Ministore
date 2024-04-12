@@ -1,8 +1,8 @@
 import { FC } from 'react'
-import { PostComment as CommentType } from '../models/apiBlogModels'
-import { appApi } from '../services/ApiService'
+import { PostComment as CommentType } from '../../models/apiBlogModels'
+import { appApi } from '../../services/ApiService'
 
-import icon from '../assets/account_avatar_face_man_people_profile_user_icon_123197.svg'
+import icon from '../../assets/account_avatar_face_man_people_profile_user_icon_123197.svg'
 
 interface PostCommentProps {
     comment: CommentType

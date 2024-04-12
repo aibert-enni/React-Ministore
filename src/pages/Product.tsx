@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom'
 import { appApi } from '../services/ApiService'
 import { useState } from 'react'
-import ProductDescription from '../components/productPage/ProductDescription'
-import ProductSummary from '../components/productPage/ProductSummary'
-import ProductReviews from '../components/productPage/ProductReviews'
+import ProductDescription from '../components/product/ProductDescription'
+import ProductSummary from '../components/product/ProductSummary'
+import ProductReviews from '../components/product/ProductReviews'
 import ProductsSlider from '../components/product/ProductsSlider'
 import { skipToken } from '@reduxjs/toolkit/query'
 
