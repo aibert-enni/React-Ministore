@@ -41,9 +41,9 @@ const CheckoutForm = () => {
     return (
         <form className="flex flex-col gap-28" onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-2 *:text-black-2 gap-5">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 font-lato">
                     <div className="flex flex-col">
-                        <p className="uppercase text-black-1 text-2xl mb-7">Billing details</p>
+                        <p className="uppercase text-black-1 text-2xl mb-7 font-jost">Billing details</p>
                         <label className="font-light">First name *</label>
                         <input className="form-input" {...register("firstname", {
                             required: "required firstname",
@@ -122,7 +122,7 @@ const CheckoutForm = () => {
                     </div>
                 </div>
                 <div className="flex flex-col">
-                    <p className="uppercase text-black-1 text-2xl mb-7">Additional Information</p>
+                    <p className="uppercase text-black-1 text-2xl mb-7 font-jost">Additional Information</p>
                     <div className="flex flex-col">
                         <label className="font-light">Order notes(optional)</label>
                         <input {...register('orderNotes')} className="form-input" type="text" />
@@ -130,12 +130,12 @@ const CheckoutForm = () => {
                 </div>
             </div>
             <div className="flex flex-col gap-7">
-                <p className="uppercase text-2xl">cart totals</p>
+                <p className="uppercase text-2xl font-jost">cart totals</p>
                 <div className="grid text-xl grid-cols-2 py-5 border-y border-[#CDCDCD]">
-                    <p className="">Total</p>
-                    <p className="text-[#72AEC8]">${cartProducts.totalPrice}.00</p>
+                    <p className="font-jost">Total</p>
+                    <p className="text-[#72AEC8] font-lato">${cartProducts.totalPrice}.00</p>
                 </div>
-                <div>
+                <div className='font-lato'>
                     <div className="flex items-center gap-3 font-light text-black-2">
                         <input {...register('payment')} className="border-[#D3D3D3]" type="radio" name="payment" id="bank" value="direct bank transfer" />
                         <label htmlFor="bank">Direct bank transfer</label>

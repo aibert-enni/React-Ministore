@@ -4,7 +4,7 @@ import { ROUTES_PATHS } from '../../router/types'
 import logo from '../../assets/logo.svg'
 import Breadcrumbs from './Breadcrumbs'
 import NavItems from './NavItems'
-import CartDropdown from './CartDropdown'
+import CartNav from './CartNav'
 import AccountNav from './AccountNav'
 
 export const navItems = [
@@ -20,8 +20,6 @@ const BreadcrumbsPaths: string[] = [ROUTES_PATHS.SHOP, ROUTES_PATHS.ABOUT, ROUTE
 const Header = () => {
   const { pathname } = useLocation()
 
-
-
   return (
     <div className='header'>
       <header className='container mx-auto max-w-screen-lg py-3'>
@@ -33,7 +31,7 @@ const Header = () => {
             <NavItems />
             <div className='flex gap-5 items-center'>
               <AccountNav />
-              <CartDropdown />
+              <CartNav />
             </div>
           </div>
         </nav>

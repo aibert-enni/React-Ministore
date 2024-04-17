@@ -27,10 +27,10 @@ const Home = () => {
       <div className="bg-grey-10 my-28">
         <div className="container-lg flex justify-between items-center">
           <div className="">
-            <p className="uppercase font-light text-3xl">- 10% off</p>
-            <p className="font-light text-6xl uppercase mb-14">New Year Sale</p>
+            <p className="uppercase font-jost font-light text-3xl">- 10% off</p>
+            <p className="font-jost font-light text-6xl uppercase mb-14">New Year Sale</p>
             <Link
-              className="uppercase font-medium bg-black-1 px-12 py-4 text-white"
+              className="uppercase font-lato font-normal bg-black-1 px-12 py-4 text-white"
               to="shop"
             >
               shop sale

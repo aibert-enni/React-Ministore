@@ -10,7 +10,7 @@ interface InstagramPostCardsProps {
 const InstagramPostCards: FC<InstagramPostCardsProps> = ({ posts }) => {
     return (
         <div className="flex flex-col items-center mt-28">
-            <p className="uppercase text-3xl">Shop our insta</p>
+            <p className="uppercase font-jost text-3xl">Shop our insta</p>
             <div className="flex gap-5 mt-7">
                 {posts?.map(post =>
                     <div onClick={() => location.href = post.post_link} className="group cursor-pointer flex-shrink-0 hover:bg-[#000] relative group">

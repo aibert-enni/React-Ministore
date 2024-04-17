@@ -91,7 +91,6 @@ const Shop = () => {
         <Pagination data={paginate} cardElement={productCard} sortItems={sortItems} sortItem={sortItem} page={page} pageHandle={pageHandle} />
         <FilterPagination blocks={filterBlocks} searchHandle={searchHandle} />
       </div>
-
     </main>
   )
 }

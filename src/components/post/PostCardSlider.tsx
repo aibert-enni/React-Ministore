@@ -14,10 +14,10 @@ export const PostCard_slider: FC<PostCard_slider_Props> = ({ postCards, category
   return (
     <div className="products-slider">
       <div className="title flex justify-between items-center">
-        <p className='uppercase text-3xl'>
+        <p className='uppercase font-jost text-3xl'>
           {category} posts
         </p>
-        <Link className='uppercase font-medium decoration-[#E1E1E1] decoration-2 hover:underline underline-offset-4' to={'/blog'}>
+        <Link className='uppercase font-lato font-normal decoration-[#E1E1E1] decoration-2 hover:underline underline-offset-4' to={'/blog'}>
           read blogs
         </Link>
       </div>

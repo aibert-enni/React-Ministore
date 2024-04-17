@@ -41,8 +41,8 @@ const Product = () => {
             {product && <ProductSummary product={product} />}
             <div>
                 <div className='flex justify-center gap-14 mb-5'>
-                    <p onClick={() => setSection(SECTION_NAMES.DESCRIPTION)} className={`uppercase cursor-pointer text-3xl ${section === SECTION_NAMES.DESCRIPTION ? 'text-[#72AEC8]' : ''}`}>Description</p>
-                    <p onClick={() => setSection(SECTION_NAMES.REVIEWS)} className={`uppercase cursor-pointer text-3xl ${section === SECTION_NAMES.REVIEWS ? 'text-[#72AEC8]' : ''}`}>Reviews ({product?.reviews_ids ? product.reviews_ids.length : 0})</p>
+                    <p onClick={() => setSection(SECTION_NAMES.DESCRIPTION)} className={`uppercase font-jost cursor-pointer text-3xl ${section === SECTION_NAMES.DESCRIPTION ? 'text-[#72AEC8]' : ''}`}>Description</p>
+                    <p onClick={() => setSection(SECTION_NAMES.REVIEWS)} className={`uppercase font-jost cursor-pointer text-3xl ${section === SECTION_NAMES.REVIEWS ? 'text-[#72AEC8]' : ''}`}>Reviews ({product?.reviews_ids ? product.reviews_ids.length : 0})</p>
                 </div>
                 <div className='border-y border-[#CDCDCD] py-7'>
                     {showSection()}

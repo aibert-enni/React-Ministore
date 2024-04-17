@@ -12,16 +12,16 @@ interface FilterListProps {
 const FilterList: FC<FilterListProps> = ({ title, filter, filterHandle, items, itemHandle }) => {
     return (
         <div>
-            <p className='uppercase text-lg underline underline-offset-2 mb-3'>{title}</p>
+            <p className='uppercase text-lg underline underline-offset-2 mb-3 font-jost'>{title}</p>
             <ul className='text-black-2 flex flex-col gap-2'>
-                {title.toLocaleLowerCase() === 'categories' && <li className={`capitalize ${filter === 'all' ? 'text-[#72AEC8]' : 'cursor-pointer hover:text-[#72AEC8]'}`} onClick={(e) => {
+                {title.toLocaleLowerCase() === 'categories' && <li className={`capitalize font-lato ${filter === 'all' ? 'text-[#72AEC8]' : 'cursor-pointer hover:text-[#72AEC8]'}`} onClick={(e) => {
                     if (filter !== 'all') {
                         itemHandle(e)
                         filterHandle(e)
                     }
                 }}>all</li>}
                 {items?.map(item =>
-                    <li className={`capitalize ${filter === item.name ? 'text-[#72AEC8]' : 'cursor-pointer hover:text-[#72AEC8]'}`} onClick={(e) => {
+                    <li className={`capitalize font-lato ${filter === item.name ? 'text-[#72AEC8]' : 'cursor-pointer hover:text-[#72AEC8]'}`} onClick={(e) => {
                         if (filter !== item.name) {
                             itemHandle(e)
                             filterHandle(e)

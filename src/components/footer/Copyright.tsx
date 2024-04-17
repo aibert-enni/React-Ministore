@@ -46,7 +46,7 @@ const payment_icons = [
 const Copyright = () => {
     return (
         <div className="border-t border-[#D0D0D0] py-5 mt-20">
-            <div className="container mx-auto max-w-screen-lg flex items-center justify-between">
+            <div className="container font-lato mx-auto max-w-screen-lg flex items-center justify-between">
                 <div className="flex">
                     <div className="flex items-center gap-2 mr-11">
                         <p>We ship with:</p>

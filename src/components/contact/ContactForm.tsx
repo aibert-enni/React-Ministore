@@ -22,9 +22,9 @@ const ContactForm = () => {
 
     return (
         <div className="w-full">
-            <p className="uppercase text-2xl">any questions?</p>
-            <p className="font-light text-black-2">Use the form below to get in touch with us.</p>
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4 mt-4 w-full">
+            <p className="uppercase text-2xl font-jost">any questions?</p>
+            <p className="font-light text-black-2 font-lato">Use the form below to get in touch with us.</p>
+            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4 mt-4 w-full font-lato">
                 <div className="flex justify-between gap-4">
                     <div className="flex flex-col w-full">
                         <input {...register('fullname', {

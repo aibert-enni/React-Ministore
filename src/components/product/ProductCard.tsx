@@ -23,15 +23,15 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
         <button onClick={(e) => {
           e.preventDefault()
           dispatch(addProduct({ product: cartProduct, amount: 1 }))
-        }} className={`uppercase absolute bottom-5 translate-x-2/4 right-2/4 bg-black-1 text-white font-medium py-2 px-7 ${isShown ? 'opacity-100' : 'opacity-0'}`}>
+        }} className={`uppercase absolute bottom-5 translate-x-2/4 right-2/4 bg-black-1 text-white font-lato font-normal py-2 px-7 ${isShown ? 'opacity-100' : 'opacity-0'}`}>
           Add to card
         </button>
       </div>
       <div className='flex justify-between items-center'>
-        <p className='capitalize text-xl'>
+        <p className='capitalize text-xl font-jost'>
           {product.name}
         </p>
-        <p className='text-xl text-[#72AEC8]'>
+        <p className='text-xl font-lato text-[#72AEC8]'>
           ${product.price}
         </p>
       </div>

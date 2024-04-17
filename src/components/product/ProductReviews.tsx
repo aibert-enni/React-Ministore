@@ -19,11 +19,11 @@ const ProductReviews: FC<ProductReviewsProps> = ({ reviews_ids }) => {
                 <div className='border border-[#CDCDCD] rounded-md p-2'>
                     <div className='flex items-center gap-3'>
                         <img className='w-8 font-medium' src={avatarIcon} alt="" />
-                        <p>{review.username}</p>
+                        <p className='font-jost'>{review.username}</p>
                     </div>
-                    <p className='font-light py-2'>{review.text}</p>
+                    <p className='font-lato font-light py-2'>{review.text}</p>
                     <div className='flex'>{starRate(review.rate)}</div>
-                    <p className='font-light pt-1'>{review.date}</p>
+                    <p className='font-lato font-light pt-1'>{review.date}</p>
                 </div>
             )}
         </div>

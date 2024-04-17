@@ -40,9 +40,9 @@ const Login = () => {
                 <img className='w-32' src={logo} alt="" />
             </div>
             <div className="p-5 border rounded border-[#D9D9D9]">
-                <p className="text-3xl font-medium">Login</p>
+                <p className="text-3xl font-jost font-normal">Login</p>
                 {error && <p className='text-error'>{error}</p>}
-                <form onSubmit={handleSubmit(onSubmit)} className="my-5 w-[312px] flex flex-col gap-5">
+                <form onSubmit={handleSubmit(onSubmit)} className="my-5 font-lato w-[312px] flex flex-col gap-5">
                     <div className="flex flex-col gap-1">
                         <label className="font-bold">Login</label>
                         <input {...register('login', {
@@ -65,7 +65,7 @@ const Login = () => {
                     </div>
                     <button className="bg-black-1 rounded text-white py-2">Login</button>
                 </form>
-                <Link to={ROUTES_PATHS.SIGN_UP}>
+                <Link className='font-jost' to={ROUTES_PATHS.SIGN_UP}>
                     sign up
                 </Link>
             </div>

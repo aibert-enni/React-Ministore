@@ -7,7 +7,7 @@ const HomeSlider = () => {
     <div className=' bg-grey-10 flex justify-between items-center'>
       <div className='container-lg flex items-center'>
         <div className='max-w-lg'>
-          <p className='font-light text-6xl uppercase mb-14'>
+          <p className='font-light font-jost text-6xl uppercase mb-14'>
             Your Products are great.
           </p>
           <Link className='button' to='shop'>

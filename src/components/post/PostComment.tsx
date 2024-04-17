@@ -14,8 +14,8 @@ const PostComment: FC<PostCommentProps> = ({ comment }) => {
         <div className='flex gap-4 items-center'>
             <img className='w-9' src={icon} alt="" />
             <div>
-                <p className='uppercase font-medium text-sm'>{user && user[0].firstname + " " + user[0].lastname}</p>
-                <p className='text-black-2 font-light'>{comment.comment}</p>
+                <p className='uppercase font-normal text-sm font-jost'>{user && user[0].firstname + " " + user[0].lastname}</p>
+                <p className='text-black-2 font-lato font-light'>{comment.comment}</p>
             </div>
         </div>
     )

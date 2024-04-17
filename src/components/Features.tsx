@@ -33,8 +33,8 @@ const Features = () => {
                 <div className="flex gap-3 items-start">
                     <img className="max-w-5" src={feature.icon} alt="" />
                     <div>
-                        <p className="uppercase text-lg">{feature.title}</p>
-                        <p className="font-light text-base">{feature.description}</p>
+                        <p className="uppercase text-lg font-jost">{feature.title}</p>
+                        <p className="font-light text-base font-lato">{feature.description}</p>
                     </div>
                 </div>
             ))}

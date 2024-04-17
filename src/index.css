@@ -7,7 +7,7 @@
     @apply container mx-auto max-w-screen-lg;
   }
   .button {
-    @apply px-10 h-[40px] bg-black-1 font-medium uppercase text-white flex items-center w-fit;
+    @apply px-10 h-[40px] bg-black-1 font-normal font-lato uppercase text-white flex items-center w-fit;
   }
   .form-input {
     @apply h-11 border border-[#D9D9D9] focus:outline-none p-5 mt-2;

@@ -13,11 +13,11 @@ const BlogPost = () => {
 
     return (
         <div className='container-lg my-28 flex flex-col gap-7'>
-            <p className='text-[#848484] text-sm uppercase'> {post?.date} - {post?.categories.join(" ")}</p>
-            <p className='uppercase text-3xl'>{post?.title}</p>
+            <p className='text-[#848484] text-sm uppercase font-lato'> {post?.date} - {post?.categories.join(" ")}</p>
+            <p className='uppercase font-jost text-3xl'>{post?.title}</p>
             <img className='h-[500px]' src={post?.coverLink} alt="" />
-            <div dangerouslySetInnerHTML={{ __html: post?.content ? post.content : '' }} />
-            <div className='flex gap-5'>
+            <div className='font-lato' dangerouslySetInnerHTML={{ __html: post?.content ? post.content : '' }} />
+            <div className='flex gap-5 font-lato'>
                 {post?.categories.map(category => <p className='capitalize hover:text-blue cursor-pointer'>{category}</p>)}
             </div>
             {id && <PostComments id={id} />}

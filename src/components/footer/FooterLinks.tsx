@@ -42,7 +42,7 @@ const FooterLinks = () => {
             <div className="flex justify-between items-center">
                 <div>
                     <img className="mb-3" src={logo} alt="" />
-                    <p className="max-w-[250px] mb-5 font-light">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
+                    <p className="max-w-[250px] mb-5 font-lato font-light">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
                     <ul className="flex items-center gap-7">
                         {social_icons.map(icon =>
                             <li>
@@ -54,8 +54,8 @@ const FooterLinks = () => {
                     </ul>
                 </div>
                 <div>
-                    <p className="uppercase text-xl mb-2">Quick links</p>
-                    <ul className="flex flex-col gap-1">
+                    <p className="uppercase text-xl mb-2 font-jost">Quick links</p>
+                    <ul className="flex flex-col gap-1 font-lato">
                         {navItems.map(item =>
                             <li>
                                 <Link className="uppercase font-medium hover:text-[#72AEC8]" to={item.path}>
@@ -66,8 +66,8 @@ const FooterLinks = () => {
                     </ul>
                 </div>
                 <div>
-                    <p className="uppercase text-xl mb-2">Help & info</p>
-                    <ul className="flex flex-col gap-1">
+                    <p className="uppercase text-xl mb-2 font-jost">Help & info</p>
+                    <ul className="flex flex-col gap-1 font-lato">
                         <li>
                             <a className="uppercase font-medium hover:text-[#72AEC8]" href="#">
                                 track your order
@@ -95,8 +95,8 @@ const FooterLinks = () => {
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <p className="uppercase text-xl mb-2">Help & info</p>
+                <div className='font-lato'>
+                    <p className="uppercase text-xl mb-2 font-jost">Contact us</p>
                     <div className="mb-3">
                         <p className="font-light">Do you have any queries or suggestions?</p>
                         <a className="hover:underline underline-offset-2" href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a>

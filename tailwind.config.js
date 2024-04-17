@@ -16,6 +16,10 @@ export default {
       'error': '#FF0000',
       'blue': '#72AEC8'
     },
+    fontFamily: {
+      'lato': ['Lato', 'sans-serif'],
+      'jost': ['Jost', 'sans-serif']
+    },
     extend: {},
   },
   plugins: ['prettier-plugin-tailwindcss'],

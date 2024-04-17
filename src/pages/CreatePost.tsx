@@ -63,7 +63,7 @@ const CreatePost = () => {
 
     return (
         <div className="container-lg my-28">
-            <p className="text-center font-medium text-3xl mb-4">Post publishing</p>
+            <p className="text-center font-medium text-3xl mb-4 font-jost">Post publishing</p>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
                 <div className="flex flex-col items-center">
                     <input {...register('title')} className="form-input" type="text" placeholder="Title" />
@@ -71,10 +71,10 @@ const CreatePost = () => {
                 <div className="flex flex-col">
                     <input {...register('coverLink')} className="form-input" type="text" placeholder="Cover image link" />
                 </div>
-                <ReactQuill theme="snow" value={postContent} onChange={setPostContent} />
+                <ReactQuill className="font-lato" theme="snow" value={postContent} onChange={setPostContent} />
                 <div>
-                    <div className="flex gap-3 items-center">
-                        <p className="">Categories:</p>
+                    <div className="flex gap-3 font-lato items-center">
+                        <p className="font-jost">Categories:</p>
                         {chosenCategories.length > 0 && chosenCategories.map(value => <p onClick={() => deleteCategoryOnClick(value)} className="tag">{value}</p>)}
                     </div>
                     <input value={category} onChange={(e) => onChange(e)} className="form-input mb-2" type="text" placeholder="Tags" />

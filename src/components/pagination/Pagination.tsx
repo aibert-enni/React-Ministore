@@ -85,15 +85,15 @@ const Pagination: FC<PaginationProps> = ({ data, cardElement, sortItem, sortItem
     return (
         <div className=''>
             <div className='flex justify-between items-center font-light mb-5'>
-                <p>Showing {1 + ((page - 1) * 9)}-{data?.next != null ? page * 9 : data?.items} of {data?.items} results</p>
+                <p className='font-lato'>Showing {1 + ((page - 1) * 9)}-{data?.next != null ? page * 9 : data?.items} of {data?.items} results</p>
                 <div className='flex flex-col flex-shrink-0 relative'>
                     <div onClick={() => setShow(!show)} className='flex items-center gap-1 cursor-pointer'>
-                        <p>{sortItem}</p>
+                        <p className='font-lato font-light'>{sortItem}</p>
                         <img src={sortArrow} alt="" />
                     </div>
                     <div className={`absolute top-6 w-[140px] z-10 bg-white border rounded-md border-[#CDCDCD] px-3 ${!show && 'hidden'}`}>
                         {sortItems.map(item =>
-                            <p className='cursor-pointer hover:text-[#72AEC8] py-1' onClick={() => { item.onClick(); setShow(!show) }}>{item.title}</p>
+                            <p className='cursor-pointer font-lato font-light hover:text-[#72AEC8] py-1' onClick={() => { item.onClick(); setShow(!show) }}>{item.title}</p>
                         )}
                     </div>
                 </div>

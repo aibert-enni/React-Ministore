@@ -54,8 +54,8 @@ const SignUp = () => {
                 <img className='w-32' src={logo} alt="" />
             </div>
             <div className="p-5 border rounded border-[#D9D9D9]">
-                <p className="text-3xl font-medium">Sign up</p>
-                <form onSubmit={handleSubmit(onSubmit)} className="my-5 w-[312px] flex flex-col gap-5">
+                <p className="text-3xl font-jost font-normal">Sign up</p>
+                <form onSubmit={handleSubmit(onSubmit)} className="my-5 w-[312px] flex flex-col gap-5 font-lato">
                     <div className="flex flex-col gap-1">
                         <label className="font-bold">Login</label>
                         <input {...register('login', {
@@ -112,7 +112,7 @@ const SignUp = () => {
                     </div>
                     <button className="bg-black-1 rounded text-white py-2">Sign up</button>
                 </form>
-                <Link to={ROUTES_PATHS.LOGIN}>
+                <Link className='font-jost' to={ROUTES_PATHS.LOGIN}>
                     Already have account? <span className='text-blue font-bold'>Login</span>
                 </Link>
             </div>
